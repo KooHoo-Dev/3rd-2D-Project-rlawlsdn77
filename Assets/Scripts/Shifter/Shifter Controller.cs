@@ -1,5 +1,5 @@
 using Study.Utilities;
-using UnityEditor.AssetImporters;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem; // mKey.Space 지정을 위해 필요!
 
@@ -11,8 +11,10 @@ namespace SHIFTER
         private CharacterController2D characterController;
         private SpriteRenderer spriteRenderer;
         private Animator animator;
+        private Shifter shifter;
 
-        private string currentState { get; set; } = "Idle";
+        private string defaultState { get; set; } = "Idle";
+        private string currentState;
 
         public int FacingDirection { get; private set; } = 1;
 
@@ -32,12 +34,7 @@ namespace SHIFTER
         private void Update()
         {
             MoveInput();
-
-            if (SimpleInput.GetKeyDown(Key.LeftShift) || SimpleInput.GetKeyDown(Key.RightShift))
-            {
-                animator.SetBool(IS_SHIFT,true);
-            }
-            
+            ShiftInput();
         }
 
         private void MoveInput()
@@ -59,6 +56,14 @@ namespace SHIFTER
             }
 
             if (SimpleInput.GetKeyDown(Key.Space)) characterController.RequestJump();
+        }
+
+        private void ShiftInput() 
+        {
+            if (SimpleInput.GetKeyDown(Key.LeftShift) || SimpleInput.GetKeyDown(Key.RightShift))
+            {
+                animator.SetTrigger(IS_SHIFT);
+            }
         }
     }
 }

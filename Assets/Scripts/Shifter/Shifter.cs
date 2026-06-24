@@ -1,11 +1,12 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 namespace SHIFTER
 {
     public class Shifter : MonoBehaviour
     {
-        public int Hp { get; private set; }
+        private const int MaxHp = 100;
+        public int Hp = 10;
 
-        public const int MaxHp = 100;
     } 
 }

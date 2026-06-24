@@ -20,7 +20,7 @@ namespace Study.Utilities
         public float        gravity             = -9.81f; 
         public float        jumpPower           = 8.0f; 
         public int          maxJumpCount        = 2;
-        public float            groundCheckDistance = 0.5f;  
+        public float        groundCheckDistance = 0.5f;  
         public float        skinWidth           = 0.02f;
         public LayerMask    collisionLayer;
 

@@ -155,8 +155,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5949405743273938619}
-  - component: {fileID: 8566047448916820189}
+  - component: {fileID: 2153141202599478859}
   - component: {fileID: 8760668621446206555}
+  - component: {fileID: 8566047448916820189}
   - component: {fileID: 6881986895962816536}
   - component: {fileID: 798125621614520401}
   m_Layer: 0
@@ -182,6 +183,30 @@ Transform:
   - {fileID: 2852040089954616725}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2153141202599478859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7774822667950956873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf4a64a92f068a449be49a06c08d01e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SHIFTER.Shifter
+--- !u!114 &8760668621446206555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7774822667950956873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d96985b6fc6c4a147a8641a868027e67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShifterController
 --- !u!114 &8566047448916820189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,18 +228,6 @@ MonoBehaviour:
   collisionLayer:
     serializedVersion: 2
     m_Bits: 8
---- !u!114 &8760668621446206555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7774822667950956873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d96985b6fc6c4a147a8641a868027e67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShifterController
 --- !u!61 &6881986895962816536
 BoxCollider2D:
   m_ObjectHideFlags: 0

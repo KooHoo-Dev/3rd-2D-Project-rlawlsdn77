@@ -1,19 +1,19 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace SHIFTER
 {
     public class TileManager : MonoBehaviour
     {
-        public GameObject[] tiles;
+        private ModManager modManager;
 
-        public string[] Modes = { "common", "black", "white",
-            "red" };
+        [Header("Tiles")]
+        [SerializeField] public List<GameObject> tiles;
 
-        private void Update()
+        private void Awake()
         {
+            modManager = GetComponentInChildren<ModManager>();
             
         }
-
-
     }
 }
