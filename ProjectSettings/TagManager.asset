@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Tile
+  - Common
+  - White
+  - Black
+  - Red
   layers:
   - Default
   - TransparentFX
