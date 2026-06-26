@@ -7,6 +7,7 @@ namespace SHIFTER
     {
         public void ChangeSceneByName(string sceneName)
         {
+            
             if (sceneName == "Exit")
             {
                 Application.Quit(); // 게임 나가기

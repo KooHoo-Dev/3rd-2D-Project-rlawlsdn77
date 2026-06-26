@@ -11,7 +11,7 @@ namespace SHIFTER
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (collision.gameObject == player)
+            if (collision.gameObject.name == "Shifter")
             {
                 if (SimpleInput.GetKeyDown(Key.W) || SimpleInput.GetKeyDown(Key.UpArrow))
                 {

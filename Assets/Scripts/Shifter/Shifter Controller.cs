@@ -73,7 +73,6 @@ namespace SHIFTER
 
         private void PortalInput()
         {
-
         }
     }
 }

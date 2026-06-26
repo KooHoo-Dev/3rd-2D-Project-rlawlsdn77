@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TileManager : MonoBehaviour
+public class PlatformManager : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     private BoxCollider2D[] allColliders;
@@ -8,7 +8,6 @@ public class TileManager : MonoBehaviour
     private void Awake()
     {
         allColliders = GetComponentsInChildren<BoxCollider2D>(true);
-
     }
 
     private void Update()

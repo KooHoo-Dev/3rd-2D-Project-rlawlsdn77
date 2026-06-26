@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 262421446445105915}
   - component: {fileID: 4403288962284453349}
   m_Layer: 0
-  m_Name: Character
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -195,6 +195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcf4a64a92f068a449be49a06c08d01e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SHIFTER.Shifter
+  Hp: 10
+  HpBar: {fileID: 0}
 --- !u!114 &8760668621446206555
 MonoBehaviour:
   m_ObjectHideFlags: 0

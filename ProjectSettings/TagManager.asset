@@ -9,6 +9,7 @@ TagManager:
   - White
   - Black
   - Red
+  - OnBossUI
   layers:
   - Default
   - TransparentFX

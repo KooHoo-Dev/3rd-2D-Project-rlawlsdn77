@@ -1,16 +1,36 @@
 using UnityEngine;
+using Unity;
 
-public class Boss : MonoBehaviour
+namespace SHIFTER
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class Boss : MonoBehaviour
     {
-        
-    }
+        [field: SerializeField] private int CurrentBossCount = 1;
+        private const int MaxBossCount = 3;
 
-    // Update is called once per frame
-    void Update()
-    {
+        private int rd;
+
+        [field: SerializeField] private Shifter shifter;
+
+        private void Awake()
+        {
+            CurrentBossCount = MaxBossCount;
+            
+        }
+
+        private void Update()
+        {
+            
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            rd = Random.Range(1, 10);
+            shifter.Hp -= rd;
+            Debug.Log($"{collision.gameObject.name}이 보스에 피격당하여 {rd} 만큼의 데미지를 입었습니다!");
+        }
+
         
+
     }
 }
