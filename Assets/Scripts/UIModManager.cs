@@ -14,11 +14,7 @@ namespace SHIFTER
 
         private void Start()
         {
-            if (player == null)
-            {
-                player = GameObject.FindWithTag("Player");
-            }
-
+            if (player == null) player = GameObject.FindWithTag("Player");
             UpdateUI("Common");
         }
 

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2270611944372777470}
   - component: {fileID: 3167676640348739028}
   - component: {fileID: 2216074501414098474}
-  - component: {fileID: 3293925875375632692}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Untagged
@@ -139,16 +138,3 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3293925875375632692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4684508173683157735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fd50238354b07d4ba1fffc62db916cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SHIFTER.Portal
-  player: {fileID: 0}

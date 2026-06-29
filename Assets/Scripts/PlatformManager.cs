@@ -19,6 +19,9 @@ public class PlatformManager : MonoBehaviour
         AlphaControll(); 
     }
 
+    /// <summary>
+    /// collider On / Off 코드
+    /// </summary>
     private void ColliderControll()
     {
         foreach (BoxCollider2D col in allColliders)
@@ -41,6 +44,9 @@ public class PlatformManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// color.a 변경 코드
+    /// </summary>
     private void AlphaControll()
     {
         string playerTag = player.tag;
