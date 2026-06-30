@@ -1,0 +1,3614 @@
+fileFormatVersion: 2
+guid: 9d5b38bac86c0184a8ca6e0cf496cf4b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3196444485033045975
+    second: Shifter_sprites_upscale_0
+  - first:
+      213: -2295570594500515640
+    second: Shifter_sprites_upscale_1
+  - first:
+      213: 8857586992354125658
+    second: Shifter_sprites_upscale_2
+  - first:
+      213: 3198891716574443246
+    second: Shifter_sprites_upscale_3
+  - first:
+      213: -7736506146814895353
+    second: Shifter_sprites_upscale_4
+  - first:
+      213: -3921188289723892658
+    second: Shifter_sprites_upscale_5
+  - first:
+      213: 5531889643485596467
+    second: Shifter_sprites_upscale_6
+  - first:
+      213: 1031116403856087823
+    second: Shifter_sprites_upscale_7
+  - first:
+      213: 1735279069276990173
+    second: Shifter_sprites_upscale_8
+  - first:
+      213: 2419712439826677640
+    second: Shifter_sprites_upscale_9
+  - first:
+      213: -6832908497305415156
+    second: Shifter_sprites_upscale_10
+  - first:
+      213: 4709685441590132669
+    second: Shifter_sprites_upscale_11
+  - first:
+      213: -5720546194146319641
+    second: Shifter_sprites_upscale_12
+  - first:
+      213: -6608844239921852755
+    second: Shifter_sprites_upscale_13
+  - first:
+      213: -282999350403518570
+    second: Shifter_sprites_upscale_14
+  - first:
+      213: -5878497823192402598
+    second: Shifter_sprites_upscale_15
+  - first:
+      213: 8671388600822515086
+    second: Shifter_sprites_upscale_16
+  - first:
+      213: 1128164022512416449
+    second: Shifter_sprites_upscale_17
+  - first:
+      213: -5091131515731821772
+    second: Shifter_sprites_upscale_18
+  - first:
+      213: -7686014630423323893
+    second: Shifter_sprites_upscale_19
+  - first:
+      213: -6133098252430955686
+    second: Shifter_sprites_upscale_20
+  - first:
+      213: -5397292477580013598
+    second: Shifter_sprites_upscale_21
+  - first:
+      213: 6160448981743665580
+    second: Shifter_sprites_upscale_22
+  - first:
+      213: -8719914138078514915
+    second: Shifter_sprites_upscale_23
+  - first:
+      213: -7562941829563616780
+    second: Shifter_sprites_upscale_24
+  - first:
+      213: 4259952443572096231
+    second: Shifter_sprites_upscale_25
+  - first:
+      213: -3925842240575736884
+    second: Shifter_sprites_upscale_26
+  - first:
+      213: 3656187347289178197
+    second: Shifter_sprites_upscale_27
+  - first:
+      213: -6304871629863767414
+    second: Shifter_sprites_upscale_28
+  - first:
+      213: 460150621832105140
+    second: Shifter_sprites_upscale_29
+  - first:
+      213: 2838428995717577447
+    second: Shifter_sprites_upscale_30
+  - first:
+      213: 5514820605424322200
+    second: Shifter_sprites_upscale_31
+  - first:
+      213: 3226749477934061122
+    second: Shifter_sprites_upscale_32
+  - first:
+      213: 3474031138713266471
+    second: Shifter_sprites_upscale_33
+  - first:
+      213: 462080756278100440
+    second: Shifter_sprites_upscale_34
+  - first:
+      213: -889978537913879174
+    second: Shifter_sprites_upscale_35
+  - first:
+      213: 8053083005136823911
+    second: Shifter_sprites_upscale_36
+  - first:
+      213: -6007553392433026531
+    second: Shifter_sprites_upscale_37
+  - first:
+      213: -3656296830232839949
+    second: Shifter_sprites_upscale_38
+  - first:
+      213: 6394393079541880508
+    second: Shifter_sprites_upscale_39
+  - first:
+      213: -4903792214287406423
+    second: Shifter_sprites_upscale_40
+  - first:
+      213: -9079456482602036773
+    second: Shifter_sprites_upscale_41
+  - first:
+      213: -6758666323786591636
+    second: Shifter_sprites_upscale_42
+  - first:
+      213: 5403398916187979739
+    second: Shifter_sprites_upscale_43
+  - first:
+      213: 4949213200668127033
+    second: Shifter_sprites_upscale_44
+  - first:
+      213: -4172269202849531582
+    second: Shifter_sprites_upscale_45
+  - first:
+      213: -3916591939021227855
+    second: Shifter_sprites_upscale_46
+  - first:
+      213: -7989601835359636323
+    second: Shifter_sprites_upscale_47
+  - first:
+      213: 2565922135937778779
+    second: Shifter_sprites_upscale_48
+  - first:
+      213: 1140114858579490111
+    second: Shifter_sprites_upscale_49
+  - first:
+      213: 5919695213181738085
+    second: Shifter_sprites_upscale_50
+  - first:
+      213: 4963661770629297334
+    second: Shifter_sprites_upscale_51
+  - first:
+      213: -5321731394712889819
+    second: Shifter_sprites_upscale_52
+  - first:
+      213: 8554585349692978600
+    second: Shifter_sprites_upscale_53
+  - first:
+      213: 7005583247365446803
+    second: Shifter_sprites_upscale_54
+  - first:
+      213: 6949031232471293007
+    second: Shifter_sprites_upscale_55
+  - first:
+      213: 6253911711849214011
+    second: Shifter_sprites_upscale_56
+  - first:
+      213: 5771897014020472860
+    second: Shifter_sprites_upscale_57
+  - first:
+      213: 1125257380226514122
+    second: Shifter_sprites_upscale_58
+  - first:
+      213: 1838110556134209382
+    second: Shifter_sprites_upscale_59
+  - first:
+      213: 291888455986500568
+    second: Shifter_sprites_upscale_60
+  - first:
+      213: -2561217805971611773
+    second: Shifter_sprites_upscale_61
+  - first:
+      213: -8964417029244982140
+    second: Shifter_sprites_upscale_62
+  - first:
+      213: -6844071029387436905
+    second: Shifter_sprites_upscale_63
+  - first:
+      213: -1830281371443571513
+    second: Shifter_sprites_upscale_64
+  - first:
+      213: -8714704091592692627
+    second: Shifter_sprites_upscale_65
+  - first:
+      213: -4421096034165969099
+    second: Shifter_sprites_upscale_66
+  - first:
+      213: -8322769372530364896
+    second: Shifter_sprites_upscale_67
+  - first:
+      213: -3580528335440707784
+    second: Shifter_sprites_upscale_68
+  - first:
+      213: -964969966400510498
+    second: Shifter_sprites_upscale_69
+  - first:
+      213: -8825513144785402170
+    second: Shifter_sprites_upscale_70
+  - first:
+      213: 5540547328612226460
+    second: Shifter_sprites_upscale_71
+  - first:
+      213: 1404326728241741729
+    second: Shifter_sprites_upscale_72
+  - first:
+      213: -2468038845028514687
+    second: Shifter_sprites_upscale_73
+  - first:
+      213: -2251946016646098907
+    second: Shifter_sprites_upscale_74
+  - first:
+      213: 1440357122374495412
+    second: Shifter_sprites_upscale_75
+  - first:
+      213: -6492626748306372716
+    second: Shifter_sprites_upscale_76
+  - first:
+      213: -1719857735201028298
+    second: Shifter_sprites_upscale_77
+  - first:
+      213: -2553998579261042789
+    second: Shifter_sprites_upscale_78
+  - first:
+      213: -8776362482265208043
+    second: Shifter_sprites_upscale_79
+  - first:
+      213: 1992611710056459930
+    second: Shifter_sprites_upscale_80
+  - first:
+      213: -3183460217040984156
+    second: Shifter_sprites_upscale_81
+  - first:
+      213: -935878212229364854
+    second: Shifter_sprites_upscale_82
+  - first:
+      213: 3317518041364965067
+    second: Shifter_sprites_upscale_83
+  - first:
+      213: 3669829128480350158
+    second: Shifter_sprites_upscale_84
+  - first:
+      213: 4424517125597186569
+    second: Shifter_sprites_upscale_85
+  - first:
+      213: 8446092931884654486
+    second: Shifter_sprites_upscale_86
+  - first:
+      213: -8481810099268103000
+    second: Shifter_sprites_upscale_87
+  - first:
+      213: -7397233701202961948
+    second: Shifter_sprites_upscale_88
+  - first:
+      213: -6658294046132561695
+    second: Shifter_sprites_upscale_89
+  - first:
+      213: -5523060842682164513
+    second: Shifter_sprites_upscale_90
+  - first:
+      213: -2735421649096316938
+    second: Shifter_sprites_upscale_91
+  - first:
+      213: 7547392509535763995
+    second: Shifter_sprites_upscale_92
+  - first:
+      213: -5057100437946799637
+    second: Shifter_sprites_upscale_93
+  - first:
+      213: -2272532842935017531
+    second: Shifter_sprites_upscale_94
+  - first:
+      213: -968333219190839423
+    second: Shifter_sprites_upscale_95
+  - first:
+      213: -1246221138486000308
+    second: Shifter_sprites_upscale_96
+  - first:
+      213: -6101175067705372064
+    second: Shifter_sprites_upscale_97
+  - first:
+      213: -1646453664254960949
+    second: Shifter_sprites_upscale_98
+  - first:
+      213: -7177055355055630700
+    second: Shifter_sprites_upscale_99
+  - first:
+      213: -338790436263818791
+    second: Shifter_sprites_upscale_100
+  - first:
+      213: -6474891022182070279
+    second: Shifter_sprites_upscale_101
+  - first:
+      213: -4550810669503604772
+    second: Shifter_sprites_upscale_102
+  - first:
+      213: 1976480440916818454
+    second: Shifter_sprites_upscale_103
+  - first:
+      213: 1500735364631612525
+    second: Shifter_sprites_upscale_104
+  - first:
+      213: -6301054365692794249
+    second: Shifter_sprites_upscale_105
+  - first:
+      213: -4369477061663645535
+    second: Shifter_sprites_upscale_106
+  - first:
+      213: 7996462321720809396
+    second: Shifter_sprites_upscale_107
+  - first:
+      213: -7761502025516169363
+    second: Shifter_sprites_upscale_108
+  - first:
+      213: 8321326422938621375
+    second: Shifter_sprites_upscale_109
+  - first:
+      213: -1289818846473103616
+    second: Shifter_sprites_upscale_110
+  - first:
+      213: -8872860786944146810
+    second: Shifter_sprites_upscale_111
+  - first:
+      213: -533533565944991076
+    second: Shifter_sprites_upscale_112
+  - first:
+      213: 202079870491087575
+    second: Shifter_sprites_upscale_113
+  - first:
+      213: 4711473080943128711
+    second: Shifter_sprites_upscale_114
+  - first:
+      213: 2718690385435154564
+    second: Shifter_sprites_upscale_115
+  - first:
+      213: 6096652889753509210
+    second: Shifter_sprites_upscale_116
+  - first:
+      213: 859707466782073369
+    second: Shifter_sprites_upscale_117
+  - first:
+      213: -8735248393991308445
+    second: Shifter_sprites_upscale_118
+  - first:
+      213: -9115514405759557300
+    second: Shifter_sprites_upscale_119
+  - first:
+      213: -8416156540905103979
+    second: Shifter_sprites_upscale_120
+  - first:
+      213: 9214386159490348895
+    second: Shifter_sprites_upscale_121
+  - first:
+      213: -7226114979753671212
+    second: Shifter_sprites_upscale_122
+  - first:
+      213: -5608795643174263131
+    second: Shifter_sprites_upscale_123
+  - first:
+      213: 1684324715139966102
+    second: Shifter_sprites_upscale_124
+  - first:
+      213: -2639651171999546739
+    second: Shifter_sprites_upscale_125
+  - first:
+      213: -6121890860496953291
+    second: Shifter_sprites_upscale_126
+  - first:
+      213: 3677866508418455641
+    second: Shifter_sprites_upscale_127
+  - first:
+      213: -1745961183998733188
+    second: Shifter_sprites_upscale_128
+  - first:
+      213: 2933514558220712051
+    second: Shifter_sprites_upscale_129
+  - first:
+      213: -4509521784617568654
+    second: Shifter_sprites_upscale_130
+  - first:
+      213: -7212606106701495275
+    second: Shifter_sprites_upscale_131
+  - first:
+      213: 4891171061093360750
+    second: Shifter_sprites_upscale_132
+  - first:
+      213: 4992808216488984872
+    second: Shifter_sprites_upscale_133
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1299
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dfa6aad25d0c5c20800000000000000
+      internalID: 3196444485033045975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1299
+        width: 74
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8e6fde4be7420e0800000000000000
+      internalID: -2295570594500515640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_2
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1299
+        width: 74
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a576366a0787cea70800000000000000
+      internalID: 8857586992354125658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_3
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1299
+        width: 74
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee6fb59511fb46c20800000000000000
+      internalID: 3198891716574443246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_4
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1299
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70bd87436a862a490800000000000000
+      internalID: -7736506146814895353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_5
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1299
+        width: 74
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4cf59d96042599c0800000000000000
+      internalID: -3921188289723892658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_6
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1171
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b0f90525835cc40800000000000000
+      internalID: 5531889643485596467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_7
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1171
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b9bedf7e24f4e00800000000000000
+      internalID: 1031116403856087823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_8
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1179
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddaec6e9e13f41810800000000000000
+      internalID: 1735279069276990173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_9
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1175
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f7672d4ab849120800000000000000
+      internalID: 2419712439826677640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_10
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1171
+        width: 74
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02dc5b8ce1ac21a0800000000000000
+      internalID: -6832908497305415156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_11
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1171
+        width: 70
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbffec5c4f92c5140800000000000000
+      internalID: 4709685441590132669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_12
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1171
+        width: 70
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e222b09b898c90b0800000000000000
+      internalID: -5720546194146319641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_13
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1175
+        width: 70
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae429fcd2ba844a0800000000000000
+      internalID: -6608844239921852755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_14
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 1171
+        width: 70
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f28871795921cf0800000000000000
+      internalID: -282999350403518570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_15
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1043
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55b5bb10616b6ea0800000000000000
+      internalID: -5878497823192402598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_16
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1043
+        width: 78
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85c56d4df5f65870800000000000000
+      internalID: 8671388600822515086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_17
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1043
+        width: 66
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c67a32833b08af00800000000000000
+      internalID: 1128164022512416449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_18
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1051
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b32044cdaa859b0800000000000000
+      internalID: -5091131515731821772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_19
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1043
+        width: 78
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b99277a6ac55590800000000000000
+      internalID: -7686014630423323893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_20
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 1055
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ba84b42abd2eaa0800000000000000
+      internalID: -6133098252430955686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_21
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 915
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef84f47617f815b0800000000000000
+      internalID: -5397292477580013598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_22
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 915
+        width: 82
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca18fbd95bf4e7550800000000000000
+      internalID: 6160448981743665580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_23
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 907
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d117cef9a44acf680800000000000000
+      internalID: -8719914138078514915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_24
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 907
+        width: 94
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f1fae7e9780b0790800000000000000
+      internalID: -7562941829563616780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_25
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 907
+        width: 94
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec0c2f5d246e1b30800000000000000
+      internalID: 4259952443572096231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_26
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 923
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc3724e384b9489c0800000000000000
+      internalID: -3925842240575736884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_27
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 911
+        width: 78
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 550037365036db230800000000000000
+      internalID: 3656187347289178197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_28
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 915
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a82388348a89088a0800000000000000
+      internalID: -6304871629863767414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_29
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 931
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bc4a757d88c26600800000000000000
+      internalID: 460150621832105140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_30
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 923
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea3ae90220246720800000000000000
+      internalID: 2838428995717577447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_31
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 915
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89642523f14988c40800000000000000
+      internalID: 5514820605424322200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_32
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 915
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 246df6bdd87b7cc20800000000000000
+      internalID: 3226749477934061122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_33
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 911
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72966a91aec363030800000000000000
+      internalID: 3474031138713266471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_34
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 911
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d10087eff3a96600800000000000000
+      internalID: 462080756278100440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_35
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 907
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75fbed2c3926a3f0800000000000000
+      internalID: -889978537913879174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_36
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 907
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7666aeb735c42cf60800000000000000
+      internalID: 8053083005136823911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_37
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 907
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a26dad402e0aca0800000000000000
+      internalID: -6007553392433026531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_38
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 907
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f8b590a769324dc0800000000000000
+      internalID: -3656296830232839949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_39
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 907
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb65f4c70a27db850800000000000000
+      internalID: 6394393079541880508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_40
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 795
+        width: 70
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aaa21766fa32fbb0800000000000000
+      internalID: -4903792214287406423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_41
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 795
+        width: 70
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd153e02f6a4ff180800000000000000
+      internalID: -9079456482602036773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_42
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 795
+        width: 70
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c621e4799c46432a0800000000000000
+      internalID: -6758666323786591636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_43
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 795
+        width: 70
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf7d139faabcfa40800000000000000
+      internalID: 5403398916187979739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_44
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 795
+        width: 70
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f6f771f232fa440800000000000000
+      internalID: 4949213200668127033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_45
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 795
+        width: 70
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249f9d0044f1916c0800000000000000
+      internalID: -4172269202849531582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_46
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 671
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b83b78e16875a9c0800000000000000
+      internalID: -3916591939021227855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_47
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 671
+        width: 78
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d947492267b3f1190800000000000000
+      internalID: -7989601835359636323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_48
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 671
+        width: 78
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5402e9769cfb9320800000000000000
+      internalID: 2565922135937778779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_49
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 671
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3576cc5c6082df00800000000000000
+      internalID: 1140114858579490111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_50
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 671
+        width: 78
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56c1748be6bf62250800000000000000
+      internalID: 5919695213181738085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_51
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 671
+        width: 78
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b4bb8fe41872e440800000000000000
+      internalID: 4963661770629297334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_52
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 531
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52618140e796526b0800000000000000
+      internalID: -5321731394712889819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_53
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 531
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5f5392d0ef7b670800000000000000
+      internalID: 8554585349692978600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_54
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 559
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39c15a7a8d4d83160800000000000000
+      internalID: 7005583247365446803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_55
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 575
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4cdb80a61bef6060800000000000000
+      internalID: 6949031232471293007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_56
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 587
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b307d69319b5ac650800000000000000
+      internalID: 6253911711849214011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_57
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 591
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1004d0e0c5e91050800000000000000
+      internalID: 5771897014020472860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_58
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 591
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: accb94d10a7bd9f00800000000000000
+      internalID: 1125257380226514122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_59
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 599
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6677644efc7428910800000000000000
+      internalID: 1838110556134209382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_60
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 531
+        width: 86
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3dc15110ffc0400800000000000000
+      internalID: 291888455986500568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_61
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 583
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f18a2b9f9b47cd0800000000000000
+      internalID: -2561217805971611773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_62
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 591
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ce369153ef79380800000000000000
+      internalID: -8964417029244982140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_63
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 587
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79cd1d309a9f401a0800000000000000
+      internalID: -6844071029387436905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_64
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 555
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c457183ac88996e0800000000000000
+      internalID: -1830281371443571513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_65
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 551
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c69f91dc62f0780800000000000000
+      internalID: -8714704091592692627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_66
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 575
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f26a5b49c15a2c0800000000000000
+      internalID: -4421096034165969099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_67
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 583
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ea3d20a559f7c80800000000000000
+      internalID: -8322769372530364896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_68
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 579
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ff5d903786f4ec0800000000000000
+      internalID: -3580528335440707784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_69
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 531
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed5e6cd9decbb92f0800000000000000
+      internalID: -964969966400510498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_70
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 535
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6868ced8a758580800000000000000
+      internalID: -8825513144785402170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_71
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 559
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c95db27b07af3ec40800000000000000
+      internalID: 5540547328612226460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_72
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 567
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af7f6908bb2d7310800000000000000
+      internalID: 1404326728241741729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_73
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 531
+        width: 54
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184c5362fb3cfbdd0800000000000000
+      internalID: -2468038845028514687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_74
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 531
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5201478770b7fb0e0800000000000000
+      internalID: -2251946016646098907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_75
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 531
+        width: 58
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bce5d4eb2d2df310800000000000000
+      internalID: 1440357122374495412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_76
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 531
+        width: 42
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497cfff2f5e85e5a0800000000000000
+      internalID: -6492626748306372716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_77
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 531
+        width: 58
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63782258086d128e0800000000000000
+      internalID: -1719857735201028298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_78
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 531
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f0b46e2df5e8cd0800000000000000
+      internalID: -2553998579261042789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_79
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 531
+        width: 66
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b448052d8143680800000000000000
+      internalID: -8776362482265208043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_80
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 531
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ee2310bcd27ab10800000000000000
+      internalID: 1992611710056459930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_81
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 531
+        width: 70
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a72fae9cc312d3d0800000000000000
+      internalID: -3183460217040984156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_82
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 531
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a838a0779b71303f0800000000000000
+      internalID: -935878212229364854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_83
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 531
+        width: 70
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc62287e4113a0e20800000000000000
+      internalID: 3317518041364965067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_84
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 403
+        width: 74
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecfd375162adde230800000000000000
+      internalID: 3669829128480350158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_85
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 403
+        width: 78
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a4ad532ea076d30800000000000000
+      internalID: 4424517125597186569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_86
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 403
+        width: 78
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f1ce0b5cc863570800000000000000
+      internalID: 8446092931884654486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_87
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 403
+        width: 78
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4ddcc37ae8a4a80800000000000000
+      internalID: -8481810099268103000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_88
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 275
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e9df37142fb75990800000000000000
+      internalID: -7397233701202961948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_89
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 275
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e89b2a97dcf893a0800000000000000
+      internalID: -6658294046132561695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_90
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 275
+        width: 70
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda5f0f0d652a53b0800000000000000
+      internalID: -5523060842682164513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_91
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 275
+        width: 70
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f763b6c084d90ad0800000000000000
+      internalID: -2735421649096316938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_92
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 307
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1eb257ef79bdb860800000000000000
+      internalID: 7547392509535763995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_93
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 275
+        width: 62
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be965b202f191d9b0800000000000000
+      internalID: -5057100437946799637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_94
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 275
+        width: 78
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf13747b675670e0800000000000000
+      internalID: -2272532842935017531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_95
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 283
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1876bed411acf82f0800000000000000
+      internalID: -968333219190839423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_96
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 279
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4585f03a7884bee0800000000000000
+      internalID: -1246221138486000308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_97
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 283
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06293f0f995445ba0800000000000000
+      internalID: -6101175067705372064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_98
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 147
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca51fa9d1f9629e0800000000000000
+      internalID: -1646453664254960949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_99
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 147
+        width: 86
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49618942e2af56c90800000000000000
+      internalID: -7177055355055630700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_100
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 147
+        width: 94
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d90239a4ef5c4bf0800000000000000
+      internalID: -338790436263818791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_101
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 147
+        width: 110
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7c877bbe09426a0800000000000000
+      internalID: -6474891022182070279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_102
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 147
+        width: 110
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd71e2caec548d0c0800000000000000
+      internalID: -4550810669503604772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_103
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 147
+        width: 110
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61aba5a3d7edd6b10800000000000000
+      internalID: 1976480440916818454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_104
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 147
+        width: 110
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ccbb6ecdea3d410800000000000000
+      internalID: 1500735364631612525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_105
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 147
+        width: 110
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ae47650782e88a0800000000000000
+      internalID: -6301054365692794249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_106
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 147
+        width: 110
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0225d43cf7c53c0800000000000000
+      internalID: -4369477061663645535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_107
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 147
+        width: 113
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7d6f15d1429fe60800000000000000
+      internalID: 7996462321720809396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_108
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 115
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6742ada70b994490800000000000000
+      internalID: -7761502025516169363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_109
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 107
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb5145b1b4a4b7370800000000000000
+      internalID: 8321326422938621375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_110
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 107
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 007dd57c794a91ee0800000000000000
+      internalID: -1289818846473103616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_111
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 19
+        width: 106
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68283bcef144dd480800000000000000
+      internalID: -8872860786944146810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_112
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 99
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92f91e6c028898f0800000000000000
+      internalID: -533533565944991076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_113
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 95
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2d0e0529eedc200800000000000000
+      internalID: 202079870491087575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_114
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 95
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7803e6efdc3826140800000000000000
+      internalID: 4711473080943128711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_115
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 19
+        width: 94
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 488d126508abab520800000000000000
+      internalID: 2718690385435154564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_116
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 19
+        width: 106
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ddd947089ab9450800000000000000
+      internalID: 6096652889753509210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_117
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 19
+        width: 94
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 912eb48d26b4eeb00800000000000000
+      internalID: 859707466782073369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_118
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 19
+        width: 106
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36bb853fdd926c680800000000000000
+      internalID: -8735248393991308445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_119
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 19
+        width: 106
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41eebba1ff2f7180800000000000000
+      internalID: -9115514405759557300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_120
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 19
+        width: 102
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59d554d773ec33b80800000000000000
+      internalID: -8416156540905103979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_121
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 19
+        width: 106
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57b2b3646310ef70800000000000000
+      internalID: 9214386159490348895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_122
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 19
+        width: 86
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d547a526bea7bb90800000000000000
+      internalID: -7226114979753671212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_123
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 83
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a6e6d6441e8922b0800000000000000
+      internalID: -5608795643174263131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_124
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 75
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694245c876cef5710800000000000000
+      internalID: 1684324715139966102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_125
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 19
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82060a9e331e5bd0800000000000000
+      internalID: -2639651171999546739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_126
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 87
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5306e5292bcaa0ba0800000000000000
+      internalID: -6121890860496953291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_127
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 79
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958969d6a186a0330800000000000000
+      internalID: 3677866508418455641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_128
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 59
+        width: 30
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74922cbd8915c7e0800000000000000
+      internalID: -1745961183998733188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_129
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 59
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378be22c2ffe5b820800000000000000
+      internalID: 2933514558220712051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_130
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 59
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 276fbf054d5fa61c0800000000000000
+      internalID: -4509521784617568654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_131
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 63
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5148e31c5fca7eb90800000000000000
+      internalID: -7212606106701495275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_132
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 67
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64e3206a2ee0e340800000000000000
+      internalID: 4891171061093360750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shifter_sprites_upscale_133
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8214a7fae940a4540800000000000000
+      internalID: 4992808216488984872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Shifter_sprites_upscale_0: 3196444485033045975
+      Shifter_sprites_upscale_1: -2295570594500515640
+      Shifter_sprites_upscale_10: -6832908497305415156
+      Shifter_sprites_upscale_100: -338790436263818791
+      Shifter_sprites_upscale_101: -6474891022182070279
+      Shifter_sprites_upscale_102: -4550810669503604772
+      Shifter_sprites_upscale_103: 1976480440916818454
+      Shifter_sprites_upscale_104: 1500735364631612525
+      Shifter_sprites_upscale_105: -6301054365692794249
+      Shifter_sprites_upscale_106: -4369477061663645535
+      Shifter_sprites_upscale_107: 7996462321720809396
+      Shifter_sprites_upscale_108: -7761502025516169363
+      Shifter_sprites_upscale_109: 8321326422938621375
+      Shifter_sprites_upscale_11: 4709685441590132669
+      Shifter_sprites_upscale_110: -1289818846473103616
+      Shifter_sprites_upscale_111: -8872860786944146810
+      Shifter_sprites_upscale_112: -533533565944991076
+      Shifter_sprites_upscale_113: 202079870491087575
+      Shifter_sprites_upscale_114: 4711473080943128711
+      Shifter_sprites_upscale_115: 2718690385435154564
+      Shifter_sprites_upscale_116: 6096652889753509210
+      Shifter_sprites_upscale_117: 859707466782073369
+      Shifter_sprites_upscale_118: -8735248393991308445
+      Shifter_sprites_upscale_119: -9115514405759557300
+      Shifter_sprites_upscale_12: -5720546194146319641
+      Shifter_sprites_upscale_120: -8416156540905103979
+      Shifter_sprites_upscale_121: 9214386159490348895
+      Shifter_sprites_upscale_122: -7226114979753671212
+      Shifter_sprites_upscale_123: -5608795643174263131
+      Shifter_sprites_upscale_124: 1684324715139966102
+      Shifter_sprites_upscale_125: -2639651171999546739
+      Shifter_sprites_upscale_126: -6121890860496953291
+      Shifter_sprites_upscale_127: 3677866508418455641
+      Shifter_sprites_upscale_128: -1745961183998733188
+      Shifter_sprites_upscale_129: 2933514558220712051
+      Shifter_sprites_upscale_13: -6608844239921852755
+      Shifter_sprites_upscale_130: -4509521784617568654
+      Shifter_sprites_upscale_131: -7212606106701495275
+      Shifter_sprites_upscale_132: 4891171061093360750
+      Shifter_sprites_upscale_133: 4992808216488984872
+      Shifter_sprites_upscale_14: -282999350403518570
+      Shifter_sprites_upscale_15: -5878497823192402598
+      Shifter_sprites_upscale_16: 8671388600822515086
+      Shifter_sprites_upscale_17: 1128164022512416449
+      Shifter_sprites_upscale_18: -5091131515731821772
+      Shifter_sprites_upscale_19: -7686014630423323893
+      Shifter_sprites_upscale_2: 8857586992354125658
+      Shifter_sprites_upscale_20: -6133098252430955686
+      Shifter_sprites_upscale_21: -5397292477580013598
+      Shifter_sprites_upscale_22: 6160448981743665580
+      Shifter_sprites_upscale_23: -8719914138078514915
+      Shifter_sprites_upscale_24: -7562941829563616780
+      Shifter_sprites_upscale_25: 4259952443572096231
+      Shifter_sprites_upscale_26: -3925842240575736884
+      Shifter_sprites_upscale_27: 3656187347289178197
+      Shifter_sprites_upscale_28: -6304871629863767414
+      Shifter_sprites_upscale_29: 460150621832105140
+      Shifter_sprites_upscale_3: 3198891716574443246
+      Shifter_sprites_upscale_30: 2838428995717577447
+      Shifter_sprites_upscale_31: 5514820605424322200
+      Shifter_sprites_upscale_32: 3226749477934061122
+      Shifter_sprites_upscale_33: 3474031138713266471
+      Shifter_sprites_upscale_34: 462080756278100440
+      Shifter_sprites_upscale_35: -889978537913879174
+      Shifter_sprites_upscale_36: 8053083005136823911
+      Shifter_sprites_upscale_37: -6007553392433026531
+      Shifter_sprites_upscale_38: -3656296830232839949
+      Shifter_sprites_upscale_39: 6394393079541880508
+      Shifter_sprites_upscale_4: -7736506146814895353
+      Shifter_sprites_upscale_40: -4903792214287406423
+      Shifter_sprites_upscale_41: -9079456482602036773
+      Shifter_sprites_upscale_42: -6758666323786591636
+      Shifter_sprites_upscale_43: 5403398916187979739
+      Shifter_sprites_upscale_44: 4949213200668127033
+      Shifter_sprites_upscale_45: -4172269202849531582
+      Shifter_sprites_upscale_46: -3916591939021227855
+      Shifter_sprites_upscale_47: -7989601835359636323
+      Shifter_sprites_upscale_48: 2565922135937778779
+      Shifter_sprites_upscale_49: 1140114858579490111
+      Shifter_sprites_upscale_5: -3921188289723892658
+      Shifter_sprites_upscale_50: 5919695213181738085
+      Shifter_sprites_upscale_51: 4963661770629297334
+      Shifter_sprites_upscale_52: -5321731394712889819
+      Shifter_sprites_upscale_53: 8554585349692978600
+      Shifter_sprites_upscale_54: 7005583247365446803
+      Shifter_sprites_upscale_55: 6949031232471293007
+      Shifter_sprites_upscale_56: 6253911711849214011
+      Shifter_sprites_upscale_57: 5771897014020472860
+      Shifter_sprites_upscale_58: 1125257380226514122
+      Shifter_sprites_upscale_59: 1838110556134209382
+      Shifter_sprites_upscale_6: 5531889643485596467
+      Shifter_sprites_upscale_60: 291888455986500568
+      Shifter_sprites_upscale_61: -2561217805971611773
+      Shifter_sprites_upscale_62: -8964417029244982140
+      Shifter_sprites_upscale_63: -6844071029387436905
+      Shifter_sprites_upscale_64: -1830281371443571513
+      Shifter_sprites_upscale_65: -8714704091592692627
+      Shifter_sprites_upscale_66: -4421096034165969099
+      Shifter_sprites_upscale_67: -8322769372530364896
+      Shifter_sprites_upscale_68: -3580528335440707784
+      Shifter_sprites_upscale_69: -964969966400510498
+      Shifter_sprites_upscale_7: 1031116403856087823
+      Shifter_sprites_upscale_70: -8825513144785402170
+      Shifter_sprites_upscale_71: 5540547328612226460
+      Shifter_sprites_upscale_72: 1404326728241741729
+      Shifter_sprites_upscale_73: -2468038845028514687
+      Shifter_sprites_upscale_74: -2251946016646098907
+      Shifter_sprites_upscale_75: 1440357122374495412
+      Shifter_sprites_upscale_76: -6492626748306372716
+      Shifter_sprites_upscale_77: -1719857735201028298
+      Shifter_sprites_upscale_78: -2553998579261042789
+      Shifter_sprites_upscale_79: -8776362482265208043
+      Shifter_sprites_upscale_8: 1735279069276990173
+      Shifter_sprites_upscale_80: 1992611710056459930
+      Shifter_sprites_upscale_81: -3183460217040984156
+      Shifter_sprites_upscale_82: -935878212229364854
+      Shifter_sprites_upscale_83: 3317518041364965067
+      Shifter_sprites_upscale_84: 3669829128480350158
+      Shifter_sprites_upscale_85: 4424517125597186569
+      Shifter_sprites_upscale_86: 8446092931884654486
+      Shifter_sprites_upscale_87: -8481810099268103000
+      Shifter_sprites_upscale_88: -7397233701202961948
+      Shifter_sprites_upscale_89: -6658294046132561695
+      Shifter_sprites_upscale_9: 2419712439826677640
+      Shifter_sprites_upscale_90: -5523060842682164513
+      Shifter_sprites_upscale_91: -2735421649096316938
+      Shifter_sprites_upscale_92: 7547392509535763995
+      Shifter_sprites_upscale_93: -5057100437946799637
+      Shifter_sprites_upscale_94: -2272532842935017531
+      Shifter_sprites_upscale_95: -968333219190839423
+      Shifter_sprites_upscale_96: -1246221138486000308
+      Shifter_sprites_upscale_97: -6101175067705372064
+      Shifter_sprites_upscale_98: -1646453664254960949
+      Shifter_sprites_upscale_99: -7177055355055630700
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -3,10 +3,10 @@ using UnityEngine.UI;
 
 namespace SHIFTER
 {
-    public class Shifter : MonoBehaviour
+    public class Shifter : MonoBehaviour, ITakeDamage
     {
-        private const int MaxHp = 100;
-        private float hp = 10.0f;
+        [SerializeField] private int MaxHp = 100;
+        [SerializeField] private float hp;
 
         public float Hp
         {
@@ -14,17 +14,8 @@ namespace SHIFTER
             set
             {
                 hp = Mathf.Clamp(value, 0, MaxHp);
-
-                if (HpBar != null)
-                {
-                    HpBar.fillAmount = hp / MaxHp;
-                }
-
-                // 2. 사망 조건 체크
-                if (hp <= 0)
-                {
-                    Debug.Log("플레이어가 사망하였습니다.");
-                }
+                if (HpBar != null) HpBar.fillAmount = hp / MaxHp;
+                if (hp <= 0) Die();
             }
         }
 
@@ -32,30 +23,31 @@ namespace SHIFTER
         private const string TAG_WHITE = "White";
         private const string TAG_BLACK = "Black";
 
-        [field: SerializeField] private Image HpBar;
-
+        [SerializeField] private Image HpBar;
         public string currentTag { get; private set; }
 
         private void Start()
         {
-            // 프로퍼티를 호출하여 초기 UI 상태도 자동으로 동기화
             Hp = MaxHp;
             gameObject.tag = TAG_COMMON;
             currentTag = TAG_COMMON;
         }
 
-        public void ShiftTag()
-        {   
-            if (gameObject.CompareTag(TAG_COMMON) || gameObject.CompareTag(TAG_BLACK))
-            {
-                gameObject.tag = TAG_WHITE;
-            }
-            else
-            {
-                gameObject.tag = TAG_BLACK;
-            }
+        public void TakeDamage(float damage)
+        {
+            Hp -= damage;
+            Debug.Log($"{gameObject.name} 피격! 현재 HP: {Hp}");
+        }
 
+        public void ShiftTag()
+        {
+            gameObject.tag = (gameObject.CompareTag(TAG_WHITE)) ? TAG_BLACK : TAG_WHITE;
             currentTag = gameObject.tag;
+        }
+
+        private void Die()
+        {
+            Debug.Log($"{gameObject.name}가 사망하였습니다.");
         }
     }
 }

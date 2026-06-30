@@ -59,10 +59,10 @@ public class PlatformManager : MonoBehaviour
             Color color = sprite.color;
 
 
-            // 다른 태그일때 알파값 0.3
+            // 다른 태그일때 알파값 0.5
             if ((playerTag == "Black" && obj.CompareTag("White")) || (playerTag == "White" && obj.CompareTag("Black")))
             {
-                color.a = 0.3f;
+                color.a = 0.5f;
             }
             // 그 외는 수정 X
             else
