@@ -8,13 +8,9 @@ namespace SHIFTER
         [field: SerializeField]
         private GameObject[] BossUI;
 
-        [Header("플레이어")]
-        [field : SerializeField]
-        private GameObject Player;
-
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.gameObject == Player)
+            if (collision.gameObject.name == "Shifter")
             {
                 for (int i = 0; i < BossUI.Length; i++)
                 {

@@ -195,6 +195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcf4a64a92f068a449be49a06c08d01e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SHIFTER.Shifter
+  MaxHp: 100
+  hp: 10
   HpBar: {fileID: 0}
 --- !u!114 &8760668621446206555
 MonoBehaviour:
@@ -225,7 +227,7 @@ MonoBehaviour:
   gravity: -24
   jumpPower: 11
   maxJumpCount: 2
-  groundCheckDistance: 0.5
+  groundCheckDistance: 0.05
   skinWidth: 0.02
   collisionLayer:
     serializedVersion: 2
@@ -240,7 +242,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 8d9e860c572173041bdcbf80b5aa417d, type: 2}
+  m_Material: {fileID: 6200000, guid: 0427ab4dae808aa4191ba3e7e88a209f, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

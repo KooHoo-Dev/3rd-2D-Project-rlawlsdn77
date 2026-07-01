@@ -1,77 +1,80 @@
 using UnityEngine;
 
-public class PlatformManager : MonoBehaviour
+namespace SHIFTER
 {
-    [SerializeField] private GameObject player;
-    private BoxCollider2D[] allColliders;
-    private SpriteRenderer[] allSprites;
-
-    private void Awake()
+    public class PlatformManager : MonoBehaviour
     {
-        // 자식 오브젝트들의 콜라이더와 스프라이트 렌더러를 미리 캐싱합니다.
-        allColliders = GetComponentsInChildren<BoxCollider2D>(true);
-        allSprites = GetComponentsInChildren<SpriteRenderer>(true);
-    }
+        [SerializeField] private GameObject player;
+        private BoxCollider2D[] allColliders;
+        private SpriteRenderer[] allSprites;
 
-    private void Update()
-    {
-        ColliderControll();
-        AlphaControll(); 
-    }
-
-    /// <summary>
-    /// collider On / Off 코드
-    /// </summary>
-    private void ColliderControll()
-    {
-        foreach (BoxCollider2D col in allColliders)
+        private void Awake()
         {
-            GameObject obj = col.gameObject;
+            // 자식 오브젝트들의 콜라이더와 스프라이트 렌더러를 미리 캐싱합니다.
+            allColliders = GetComponentsInChildren<BoxCollider2D>(true);
+            allSprites = GetComponentsInChildren<SpriteRenderer>(true);
+        }
 
-            // 태그 조건 검사 (기존 로직 유지)
-            if (obj.CompareTag("Common") || obj.CompareTag("Red"))
+        private void Update()
+        {
+            ColliderControll();
+            AlphaControll();
+        }
+
+        /// <summary>
+        /// collider On / Off 코드
+        /// </summary>
+        private void ColliderControll()
+        {
+            foreach (BoxCollider2D col in allColliders)
             {
-                col.enabled = true;
-            }
-            else if (obj.CompareTag(player.tag))
-            {
-                col.enabled = true;
-            }
-            else
-            {
-                col.enabled = false;
+                GameObject obj = col.gameObject;
+
+                // 태그 조건 검사 (기존 로직 유지)
+                if (obj.CompareTag("Common") || obj.CompareTag("Red"))
+                {
+                    col.enabled = true;
+                }
+                else if (obj.CompareTag(player.tag))
+                {
+                    col.enabled = true;
+                }
+                else
+                {
+                    col.enabled = false;
+                }
             }
         }
-    }
 
-    /// <summary>
-    /// color.a 변경 코드
-    /// </summary>
-    private void AlphaControll()
-    {
-        string playerTag = player.tag;
-
-        foreach (SpriteRenderer sprite in allSprites)
+        /// <summary>
+        /// color.a 변경 코드
+        /// </summary>
+        private void AlphaControll()
         {
-            if (sprite == null) continue;
+            string playerTag = player.tag;
 
-            GameObject obj = sprite.gameObject;
-            Color color = sprite.color;
-
-
-            // 다른 태그일때 알파값 0.5
-            if ((playerTag == "Black" && obj.CompareTag("White")) || (playerTag == "White" && obj.CompareTag("Black")))
+            foreach (SpriteRenderer sprite in allSprites)
             {
-                color.a = 0.5f;
-            }
-            // 그 외는 수정 X
-            else
-            {
-                color.a = 1.0f;
-            }
+                if (sprite == null) continue;
 
-            // 변경된 컬러 적용
-            sprite.color = color;
+                GameObject obj = sprite.gameObject;
+                Color color = sprite.color;
+
+
+                // 다른 태그일때 알파값 0.5
+                if ((playerTag == "Black" && obj.CompareTag("White")) || (playerTag == "White" && obj.CompareTag("Black")))
+                {
+                    color.a = 0.5f;
+                }
+                // 그 외는 수정 X
+                else
+                {
+                    color.a = 1.0f;
+                }
+
+                // 변경된 컬러 적용
+                sprite.color = color;
+            }
         }
     }
 }

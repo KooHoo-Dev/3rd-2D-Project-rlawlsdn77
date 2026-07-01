@@ -6,9 +6,9 @@ PhysicsMaterial2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GGI_IM BLOCK
+  m_Name: Box_Physic
   serializedVersion: 2
-  friction: 0
+  friction: 0.6
   bounciness: 0
-  m_FrictionCombine: 1
+  m_FrictionCombine: 0
   m_BounceCombine: 4

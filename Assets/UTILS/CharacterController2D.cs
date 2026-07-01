@@ -16,11 +16,11 @@ namespace Study.Utilities
         private const float GROUND_STICK_SPEED = -2.0f;
 
         [Header("Settings")]
-        public float        speed               = 2.0f;
-        public float        gravity             = -9.81f; 
-        public float        jumpPower           = 8.0f; 
+        public float        speed               = 8.0f;
+        public float        gravity             = -24.0f; 
+        public float        jumpPower           = 11.0f; 
         public int          maxJumpCount        = 2;
-        public float        groundCheckDistance = 0.5f;  
+        public float        groundCheckDistance = 0.05f;  
         public float        skinWidth           = 0.02f;
         public LayerMask    collisionLayer;
 
@@ -114,14 +114,48 @@ namespace Study.Utilities
             Vector3 dir = (move > 0.0f ? axis : -axis);
             float distance = Mathf.Abs(move);
             Bounds box = GetCastBox();
-            
+    
             RaycastHit2D hit = Physics2D.BoxCast(
                 box.center, box.size, 0.0f, dir, distance, collisionLayer);
 
             if (hit.collider == null) return move;
 
-            float allowed = Mathf.Max(0, hit.distance - skinWidth);
+            // --- [Dynamic 물체 상호작용 로직] ---
+            Rigidbody2D attachedBody = hit.collider.attachedRigidbody;
+            if (attachedBody != null && attachedBody.bodyType == RigidbodyType2D.Dynamic)
+            {
+                // 1. 좌우 이동 (X축) - 상자 밀기
+                if (axis == Vector3.right)
+                {
+                    attachedBody.linearVelocityX = moveInput * speed;
+            
+                    Bounds boxBounds = hit.collider.bounds;
+                    RaycastHit2D boxHit = Physics2D.BoxCast(
+                        boxBounds.center, boxBounds.size, 0.0f, dir, skinWidth * 2f, collisionLayer);
 
+                    if (boxHit.collider != null && boxHit.collider.attachedRigidbody?.bodyType != RigidbodyType2D.Dynamic)
+                    {
+                        attachedBody.linearVelocityX = 0f;
+                        float allowedObstacle = Mathf.Max(0, hit.distance - skinWidth);
+                        return Mathf.Sign(move) * allowedObstacle;
+                    }
+                    return move; 
+                }
+        
+                // 2. 상하 이동 (Y축) - 상자 위에 착지할 때 끼임 방지 예외 처리
+                if (axis == Vector3.up)
+                {
+                    // 아래로 떨어지는 중일 때 (착지 순간)
+                    if (move < 0.0f)
+                    {
+                        // 완전히 박스 표면에 안착하도록 skinWidth만큼만 여유를 두고 정지 위치를 계산합니다.
+                        float allowedObstacle = Mathf.Max(0, hit.distance - skinWidth);
+                        return Mathf.Sign(move) * allowedObstacle;
+                    }
+                }
+            }
+
+            float allowed = Mathf.Max(0, hit.distance - skinWidth);
             return Mathf.Sign(move) * allowed;
         }
 
@@ -154,6 +188,7 @@ namespace Study.Utilities
             Bounds box = GetCastBox();
             RaycastHit2D hit = Physics2D.BoxCast(
                 box.center, box.size, 0.0f, Vector2.down, groundCheckDistance, collisionLayer);
+
 
             bool result = (hit.collider != null);
             return result;

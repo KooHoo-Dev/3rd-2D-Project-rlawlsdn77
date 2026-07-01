@@ -5,7 +5,7 @@ namespace SHIFTER
 {
     public class Shifter : MonoBehaviour, ITakeDamage
     {
-        [SerializeField] private int MaxHp = 100;
+        [SerializeField] private float MaxHp = 100f;
         [SerializeField] private float hp;
 
         public float Hp
