@@ -198,6 +198,7 @@ MonoBehaviour:
   MaxHp: 100
   hp: 10
   HpBar: {fileID: 0}
+  GameoverUI: {fileID: 0}
 --- !u!114 &8760668621446206555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,8 +228,9 @@ MonoBehaviour:
   gravity: -24
   jumpPower: 11
   maxJumpCount: 2
-  groundCheckDistance: 0.05
-  skinWidth: 0.02
+  groundCheckDistance: 0.02
+  skinWidth: 0.01
+  pushPower: 2
   collisionLayer:
     serializedVersion: 2
     m_Bits: 8

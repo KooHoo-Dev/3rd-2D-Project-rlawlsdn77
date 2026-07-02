@@ -16,6 +16,10 @@ namespace SHIFTER
                 {
                     BossUI[i].gameObject.SetActive(true);
                 }
+
+                Debug.Log("보스 방 진입");
+
+                this.enabled = false;
             }
         }
     }

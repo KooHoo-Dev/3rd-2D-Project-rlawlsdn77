@@ -16,21 +16,22 @@ namespace Study.Utilities
         private const float GROUND_STICK_SPEED = -2.0f;
 
         [Header("Settings")]
-        public float        speed               = 8.0f;
-        public float        gravity             = -24.0f; 
-        public float        jumpPower           = 11.0f; 
-        public int          maxJumpCount        = 2;
-        public float        groundCheckDistance = 0.05f;  
-        public float        skinWidth           = 0.02f;
-        public LayerMask    collisionLayer;
+        public float speed = 2.0f;
+        public float gravity = -9.81f;
+        public float jumpPower = 8.0f;
+        public int maxJumpCount = 2;
+        public float groundCheckDistance = 0.5f;
+        public float skinWidth = 0.02f;
+        public float pushPower = 2.0f;
+        public LayerMask collisionLayer;
 
         private Rigidbody2D rBody;
-        private Collider2D  col;
-        
-        private int     jumpCount           = 0;
-        private bool    jumpRequested       = false;
-        private Vector3 externalDelta       = Vector3.zero;   
-        private float   moveInput           = 0.0f;
+        private Collider2D col;
+
+        private int jumpCount = 0;
+        private bool jumpRequested = false;
+        private Vector3 externalDelta = Vector3.zero;
+        private float moveInput = 0.0f;
 
         // 아래의 두개는 외부에서 조회가 가능해야 합니다. 
         // 읽기 전용으로 바꿔줍니다
@@ -114,54 +115,36 @@ namespace Study.Utilities
             Vector3 dir = (move > 0.0f ? axis : -axis);
             float distance = Mathf.Abs(move);
             Bounds box = GetCastBox();
-    
+
             RaycastHit2D hit = Physics2D.BoxCast(
                 box.center, box.size, 0.0f, dir, distance, collisionLayer);
 
             if (hit.collider == null) return move;
 
-            // --- [Dynamic 물체 상호작용 로직] ---
-            Rigidbody2D attachedBody = hit.collider.attachedRigidbody;
-            if (attachedBody != null && attachedBody.bodyType == RigidbodyType2D.Dynamic)
+            // --- [박스 밀기 로직 추가 시작] ---
+            // 수평 이동(Vector3.right 축)일 때만 밀도록 체크
+            if (axis == Vector3.right)
             {
-                // 1. 좌우 이동 (X축) - 상자 밀기
-                if (axis == Vector3.right)
-                {
-                    attachedBody.linearVelocityX = moveInput * speed;
-            
-                    Bounds boxBounds = hit.collider.bounds;
-                    RaycastHit2D boxHit = Physics2D.BoxCast(
-                        boxBounds.center, boxBounds.size, 0.0f, dir, skinWidth * 2f, collisionLayer);
+                Rigidbody2D pushBody = hit.collider.GetComponent<Rigidbody2D>();
 
-                    if (boxHit.collider != null && boxHit.collider.attachedRigidbody?.bodyType != RigidbodyType2D.Dynamic)
-                    {
-                        attachedBody.linearVelocityX = 0f;
-                        float allowedObstacle = Mathf.Max(0, hit.distance - skinWidth);
-                        return Mathf.Sign(move) * allowedObstacle;
-                    }
-                    return move; 
-                }
-        
-                // 2. 상하 이동 (Y축) - 상자 위에 착지할 때 끼임 방지 예외 처리
-                if (axis == Vector3.up)
+                // 충돌한 오브젝트에 Dynamic Rigidbody가 있는지 확인
+                if (pushBody != null && pushBody.bodyType == RigidbodyType2D.Dynamic)
                 {
-                    // 아래로 떨어지는 중일 때 (착지 순간)
-                    if (move < 0.0f)
-                    {
-                        // 완전히 박스 표면에 안착하도록 skinWidth만큼만 여유를 두고 정지 위치를 계산합니다.
-                        float allowedObstacle = Mathf.Max(0, hit.distance - skinWidth);
-                        return Mathf.Sign(move) * allowedObstacle;
-                    }
+                    // 밀어낼 방향과 힘을 계산하여 속도(velocity)를 부여
+                    // 플레이어의 이동 속도(moveInput * speed)에 맞춰 밀어냅니다.
+                    pushBody.linearVelocity = new Vector2(dir.x * speed, pushBody.linearVelocity.y);
                 }
             }
+            // --- [박스 밀기 로직 추가 끝] ---
 
             float allowed = Mathf.Max(0, hit.distance - skinWidth);
+
             return Mathf.Sign(move) * allowed;
         }
 
         private Bounds GetCastBox()
         {
-            Bounds box = col.bounds; 
+            Bounds box = col.bounds;
 
             Vector3 size = box.size;
             size.x -= skinWidth * 2;
@@ -180,7 +163,7 @@ namespace Study.Utilities
 
             VerticalVelocity = jumpPower;
             jumpCount++;
-            IsGrounded = false; 
+            IsGrounded = false;
         }
 
         private bool CheckGrounded()
@@ -188,7 +171,6 @@ namespace Study.Utilities
             Bounds box = GetCastBox();
             RaycastHit2D hit = Physics2D.BoxCast(
                 box.center, box.size, 0.0f, Vector2.down, groundCheckDistance, collisionLayer);
-
 
             bool result = (hit.collider != null);
             return result;

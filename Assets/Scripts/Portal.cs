@@ -10,21 +10,43 @@ namespace SHIFTER
         private int nextSceneIdx;
         private int currentSceneIdx;
 
+        // 포탈 안에 있는지 체크하는 플래그
+        private bool isPlayerInside = false;
+
         private void Awake()
         {
             currentSceneIdx = SceneManager.GetActiveScene().buildIndex;
             nextSceneIdx = Mathf.Clamp(currentSceneIdx + 1, 0, SceneManager.sceneCountInBuildSettings - 1);
         }
 
-        private void OnTriggerStay2D(Collider2D collision)
+        private void Update()
         {
-            if (collision.gameObject.name == "Shifter")
+            // W or 윗방향키 입력 시 다음 씬으로 이동
+            if (isPlayerInside)
             {
-                // 영역 안에서 키를 누르는 순간을 감지합니다.
                 if (SimpleInput.GetKeyDown(Key.W) || SimpleInput.GetKeyDown(Key.UpArrow))
                 {
                     SceneManager.LoadScene(nextSceneIdx);
                 }
+            }
+        }
+
+        // 영역에 들어왔을 때
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.gameObject.name == "Shifter")
+            {
+                isPlayerInside = true;
+            }
+
+        }
+
+        // 영역에서 나갔을 때
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            if (collision.gameObject.name == "Shifter")
+            {
+                isPlayerInside = false;
             }
         }
     }

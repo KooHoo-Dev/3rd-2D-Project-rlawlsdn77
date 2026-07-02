@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace SHIFTER
 {
-    public class JumpJump : MonoBehaviour
+    public class Eruption : MonoBehaviour
     {
         private GameObject Volcano;
 
