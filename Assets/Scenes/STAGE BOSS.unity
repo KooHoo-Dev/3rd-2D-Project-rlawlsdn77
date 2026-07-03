@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85dab3e06e61c647ac245e2c2d041d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SHIFTER.RedTileDamageManager
-  player: {fileID: 0}
+  player: {fileID: 986021347}
   damageInterval: 1
   damageAmount: 30
 --- !u!1 &968572452

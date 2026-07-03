@@ -13,9 +13,13 @@ namespace SHIFTER
         private Animator animator;
         private Shifter shifter;
 
+        [Header("Shift 쿨타임")]
         [SerializeField] private float shiftCooldown = 2f;
         private float cooldownTimer = 0f;
-        
+
+        [Header("일시정지")]
+        [SerializeField] private GameObject PauseUI;
+        private bool isPaused = false;
 
         public int FacingDirection { get; private set; } = 1;
 
@@ -38,6 +42,7 @@ namespace SHIFTER
             UpdateCooldown();
             MoveInput();
             ShiftInput();
+            EscInput();
         }
 
         // Shift 쿨다운 함순
@@ -80,6 +85,26 @@ namespace SHIFTER
                     shifter.ShiftTag();
 
                     Debug.Log($"현재 플레이어의 속성은 {gameObject.tag} 입니다.");
+                }
+            }
+        }
+
+        // Esc 키 입력 시 게임 일시정지 후 UI_Pause 활성화
+        private void EscInput()
+        {
+            if (SimpleInput.GetKeyDown(Key.Escape))
+            {
+                if (!isPaused)
+                {
+                    Time.timeScale = 0f;
+                    PauseUI.SetActive(true);
+                    isPaused = true;
+                }
+                else
+                {
+                    Time.timeScale = 1f;
+                    PauseUI.SetActive(false);
+                    isPaused = false;
                 }
             }
         }

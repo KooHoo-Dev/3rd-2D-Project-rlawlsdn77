@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,7 +6,7 @@ namespace SHIFTER
 {
     public class SceneChanger : MonoBehaviour
     {
-        private int currentSceneIdx;
+        private int currentSceneIdx;    
 
         private void Awake()
         {
@@ -21,14 +22,14 @@ namespace SHIFTER
                 UnityEditor.EditorApplication.isPlaying = false; // 유니티 에디터 나가기
             }
 
-            else if (sceneName == "Restart")
+            else if (sceneName == "Restart") // 현재 씬 재시작
             {
-                SceneManager.LoadScene(currentSceneIdx); // 현재 씬 재시작
+                SceneManager.LoadScene(currentSceneIdx); 
             }
 
-            else if (sceneName == "Menu")
+            else if (sceneName == "Menu") // 메인 메뉴로 이동
             {
-                SceneManager.LoadScene("Menu"); // 메뉴 씬으로 이동
+                SceneManager.LoadScene("Menu"); 
 
             }
             else SceneManager.LoadScene(sceneName);  // 씬 이름에 맞게 이동

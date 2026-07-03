@@ -92,6 +92,19 @@ namespace Study.Utilities
             return true;
         }
 
+        public void LaunchByJumpPad(float launchY, float launchXMultiplier)
+        {
+            VerticalVelocity = launchY;
+
+            float currentXMove = moveInput * speed;
+            Vector3 horizontalDelta = new Vector3(currentXMove * launchXMultiplier, 0f, 0f) * Time.fixedDeltaTime;
+
+            AddExternalMovement(horizontalDelta);
+
+            jumpCount = 0;
+            IsGrounded = false;
+        }
+
         #endregion
 
         #region Private Methods (운동 파이프라인)
@@ -121,7 +134,6 @@ namespace Study.Utilities
 
             if (hit.collider == null) return move;
 
-            // --- [박스 밀기 로직 추가 시작] ---
             // 수평 이동(Vector3.right 축)일 때만 밀도록 체크
             if (axis == Vector3.right)
             {
@@ -135,7 +147,6 @@ namespace Study.Utilities
                     pushBody.linearVelocity = new Vector2(dir.x * speed, pushBody.linearVelocity.y);
                 }
             }
-            // --- [박스 밀기 로직 추가 끝] ---
 
             float allowed = Mathf.Max(0, hit.distance - skinWidth);
 
