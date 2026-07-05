@@ -38,7 +38,7 @@ namespace SHIFTER
             Hp = MaxHp;
             gameObject.tag = TAG_COMMON;
             currentTag = TAG_COMMON;
-            spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         }
 
         public void TakeDamage(float damage)
@@ -58,9 +58,13 @@ namespace SHIFTER
         {
             if (spriteRenderer != null)
             {
-                spriteRenderer.color = Color.red;
-                yield return new WaitForSeconds(0.15f);
-                spriteRenderer.color = Color.white;
+                for (int i = 0; i < 3; i++)
+                {
+                    spriteRenderer.color = Color.red;
+                    yield return new WaitForSeconds(0.1f);
+                    spriteRenderer.color = Color.white;
+                    yield return new WaitForSeconds(0.1f);
+                }
             }
         }
 

@@ -1,24 +1,49 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 namespace SHIFTER
 {
     public class PlatformManager : MonoBehaviour
     {
         [SerializeField] private GameObject player;
-        private BoxCollider2D[] allColliders;
-        private SpriteRenderer[] allSprites;
 
-        private void Awake()
-        {
-            // 자식 오브젝트들의 콜라이더와 스프라이트 렌더러를 미리 캐싱합니다.
-            allColliders = GetComponentsInChildren<BoxCollider2D>(true);
-            allSprites = GetComponentsInChildren<SpriteRenderer>(true);
-        }
+        // 레벨에 미리 배치된 타일(자식 계층)뿐 아니라, 보스전 중 런타임에 Instantiate()되는
+        // 발판까지 전부 관리하기 위해 "자식 캐싱" 대신 매 프레임 태그를 기준으로 다시 찾습니다.
+        private static readonly string[] ManagedTags = { "Common", "White", "Black", "Red" };
+
+        private readonly List<BoxCollider2D> allColliders = new List<BoxCollider2D>();
+        private readonly List<SpriteRenderer> allSprites = new List<SpriteRenderer>();
 
         private void Update()
         {
+            RefreshTargets();
             ColliderControll();
             AlphaControll();
+        }
+
+        // 태그(Common/White/Black/Red)를 기준으로 관리 대상 콜라이더/스프라이트를 갱신합니다.
+        // 계층 구조와 무관하게 동작하므로 보스전 중 새로 생성된 발판도 즉시 포함됩니다.
+        private void RefreshTargets()
+        {
+            allColliders.Clear();
+            allSprites.Clear();
+
+            foreach (string tag in ManagedTags)
+            {
+                GameObject[] objs = GameObject.FindGameObjectsWithTag(tag);
+                foreach (GameObject obj in objs)
+                {
+                    // 보스 패턴이 발사하는 운석/레이저/탄환 등은 Rigidbody2D를 가진 이동체이며,
+                    // 발판(플랫폼)이 아니므로 관리 대상에서 제외합니다. (색상/충돌은 각 공격 스크립트가 직접 관리)
+                    if (obj.GetComponent<Rigidbody2D>() != null) continue;
+
+                    BoxCollider2D col = obj.GetComponent<BoxCollider2D>();
+                    if (col != null) allColliders.Add(col);
+
+                    SpriteRenderer sr = obj.GetComponent<SpriteRenderer>();
+                    if (sr != null) allSprites.Add(sr);
+                }
+            }
         }
 
         /// <summary>

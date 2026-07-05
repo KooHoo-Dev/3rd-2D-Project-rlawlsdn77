@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1851193060184984367}
-  - component: {fileID: 7216679708054274402}
   m_Layer: 0
   m_Name: JumpJump
   m_TagString: Untagged
@@ -32,18 +31,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6539758479753497837}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7216679708054274402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1886171592834703288}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df483ba01788ecd448befec3378eeb97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!1 &2813467545019631146
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +459,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -507,8 +494,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fbfde734dfa8e4bbe6c75c30a1882e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  boss: {fileID: 0}
-  bossManager: {fileID: 0}
   bounceForce: 15
 --- !u!1 &6612517224822329197
 GameObject:
@@ -553,6 +538,9 @@ GameObject:
   - component: {fileID: 5940233360067191848}
   - component: {fileID: 782131369895424541}
   - component: {fileID: 7717570807567446829}
+  - component: {fileID: 1981393887612286379}
+  - component: {fileID: 8592011081476488747}
+  - component: {fileID: 47137724468192720}
   m_Layer: 0
   m_Name: Agis
   m_TagString: Untagged
@@ -606,11 +594,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 808413ce43c72354da071a4ed1550074, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossManager
-  Shifter: {fileID: 0}
-  Boss: {fileID: 0}
+  eruptionPattern: {fileID: 0}
+  razerPattern: {fileID: 0}
+  rampagePattern: {fileID: 0}
   PatternInterval: 10
-  PatternTimer: 0
-  BossHeart: {fileID: 6582146129420312555}
+  bossHeart: {fileID: 0}
+  platformPrefab: {fileID: 3473445814907135512, guid: 1e62d84fd1cc0fe46899027cd8f86d6e, type: 3}
+  platformCountPerPattern: 5
+  platformSpawnRadius: 6
 --- !u!60 &7717570807567446829
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -672,3 +663,57 @@ PolygonCollider2D:
       - {x: 5.5194755, y: -0.3317566}
       - {x: 4.610051, y: 3.0134926}
   m_UseDelaunayMesh: 1
+--- !u!114 &1981393887612286379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7453294228955373063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9595086ca4af3004fa93a566b656955d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SHIFTER.BossPattern_Eruption
+  meteorPrefab: {fileID: 2276601833269396164, guid: 891a16e2c08e3fe428d918e052c9dc44, type: 3}
+  meteorCount: 5
+  meteorSpawnHeight: 10
+  meteorSpawnInterval: 0.5
+  meteorSpawnWidth: 8
+--- !u!114 &8592011081476488747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7453294228955373063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581a429ef5d195f47abbf86ffe08a44f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SHIFTER.BossPattern_Rampage
+  projectilePrefab: {fileID: 2401810056004988695, guid: dab0a6290ad40f048a4ad7e1faddf627, type: 3}
+  projectilesPerBurst: 8
+  burstCount: 3
+  burstInterval: 1.5
+  projectileSpeed: 10
+  projectileDamage: 6
+  targetPlayer: 0
+--- !u!114 &47137724468192720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7453294228955373063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098c7932becba6b41829d7d60d735b59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SHIFTER.BossPattern_Razer
+  laserProjectilePrefab: {fileID: 9021972750653181393, guid: 79fdd87012945e84b83b1358abc9e860, type: 3}
+  minLaserCount: 5
+  maxLaserCount: 10
+  laserSpawnInterval: 0.3
+  laserSpeed: 12
+  laserDamage: 8

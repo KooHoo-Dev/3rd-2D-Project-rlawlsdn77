@@ -1,51 +1,79 @@
 using UnityEngine;
-using System.Collections.Generic; 
+using System.Collections;
+using System.Collections.Generic;
 
 namespace SHIFTER
 {
     // 보스의 패턴 관리 및 그로기 상태 전환을 담당하는 스크립트
-
     // 패턴은 일정 시간 간격으로 변경되며, 3번의 패턴 실행 후 보스는 그로기 상태로 전환됩니다.
-    // 패턴마다 무작위 태그의 플랫폼이 다량 생성되고 패턴 종료시 생성된 플랫폼은 제거
-    // 패턴 : Eruption (용암분출) , Razer (레이저) , Rampage (무차별 난사)
-    // Eruption : 바닥이 용암으로 변하며 초당 10의 지속 입힘. 하늘에서는 운석이 떨어지며 플레이어 공격
-    // Razer : 보스가 레이저를 5 ~ 10회 발사하여 플레이어 공격
-    // Rampage : 보스가 보스 오브젝트의 중심에서 무차별 난사를 하며 플레이어 공격
-    // 그로기 : 보스가 일정 시간 동안 약점이 드러나며 플레이어가 약점을 밟으면 보스 체력 감소
 
     public class BossManager : MonoBehaviour
     {
-        [Header("참조 스크립트")]
-        [SerializeField] private Shifter Shifter;
-        [SerializeField] private Boss Boss;
+        // 패턴 참조
+        private BossPattern_Eruption eruptionPattern;
+        private BossPattern_Razer razerPattern;
+        private BossPattern_Rampage rampagePattern;
 
         [Header("패턴 설정")]
         [SerializeField] private float PatternInterval = 10f; // 패턴 간격
-        [SerializeField] private float PatternTimer = 0f;     // 패턴 타이머
-        private int patternCount = 0;                         // 패턴 실행 횟수 카운트
+        private float PatternTimer = 0f;                       // 패턴 타이머
+        private int patternCount = 0;                          // 패턴 실행 횟수 카운트
 
-        [Header("보스 상태 오브젝트")]
-        [SerializeField] private GameObject BossHeart;        // 그로기 상태 시 드러나는 보스 약점
+        [Header("보스 약점")]
+        [SerializeField] private BossHeart bossHeart;
 
-        private bool isGroggy = false; // 현재 그로기 상태인지 체크하는 플래그
+        private Animator bossAnimator;
 
-        // [추가] 생성된 플랫폼들을 관리할 리스트
+        private const string ANIM_ATK1_ERUPTION = "Atk1";
+        private const string ANIM_ATK2_RAMPAGE = "Atk2";
+        private const string ANIM_ATK3_RAZER = "Atk3";
+        private const string ANIM_DEATH = "Death";
+        private const string ANIM_IDLE_STATE = "boss_idle";
+
+        // 보스 사망 애니메이션 길이
+        [SerializeField] private float deathAnimationDuration = 2.1f;
+
+        [Header("플랫폼 생성 설정")]
+        [SerializeField] private GameObject platformPrefab;   // 플랫폼 프리팹
+        [SerializeField] private int platformCountPerPattern = 5;
+        [SerializeField] private float platformSpawnRadius = 6f;
+
+        private Shifter shifter;
+        private Boss boss;
+
+        private bool isGroggy = false;
+        private bool encounterStarted = false; 
+        private IBossPattern currentPattern = null;
         private List<GameObject> activePlatforms = new List<GameObject>();
 
         private void Start()
         {
-            if (Boss == null) Boss = FindFirstObjectByType<Boss>();
-            if (Shifter == null) Shifter = FindFirstObjectByType<Shifter>();
+            boss = FindFirstObjectByType<Boss>();
+            shifter = FindFirstObjectByType<Shifter>();
 
-            if (BossHeart != null) BossHeart.SetActive(false);
+            eruptionPattern = GetComponent<BossPattern_Eruption>();
+            razerPattern = GetComponent<BossPattern_Razer>();
+            rampagePattern = GetComponent<BossPattern_Rampage>();
+
+            bossHeart = GetComponentInChildren<BossHeart>(true);
+            bossHeart.gameObject.SetActive(false);
+
+            bossAnimator = GetComponentInChildren<Animator>();
         }
 
         private void Update()
         {
-            if (!isGroggy)
-            {
-                PatternManager();
-            }
+            if (!encounterStarted) return;
+            if (!isGroggy) PatternManager();
+        }
+
+        // OnBossUI(보스룸 진입 트리거)가 호출하여 보스 패턴을 시작시킵니다.
+        public void BeginEncounter()
+        {
+            if (encounterStarted) return;
+            encounterStarted = true;
+            PatternTimer = 0f;
+            Debug.Log("보스전 시작!");
         }
 
         private void PatternManager()
@@ -60,13 +88,18 @@ namespace SHIFTER
 
         private void ChangePattern()
         {
-            // 패턴 종료 시 생성된 플랫폼 제거
+            // 이전 패턴 종료 및 플랫폼 제거
+            if (currentPattern != null)
+            {
+                currentPattern.EndPattern();
+            }
             ClearPlatforms();
 
             patternCount++;
-            Debug.Log($"보스가 {patternCount}번째 패턴을 실행합니다.");
+            Debug.Log($"보스가 {patternCount}번째 패턴을 실행합니다");
 
-            if (patternCount > 3) // 3번 실행 '후' 그로기 전환 (4번째 타이밍)
+            // 3번 실행 후 그로기 상태로 전환
+            if (patternCount > 3)
             {
                 StartGroggy();
                 return;
@@ -77,36 +110,56 @@ namespace SHIFTER
             switch (randomPattern)
             {
                 case 0:
-                    Debug.Log("패턴 : Eruption (용암분출) - 초당 10의 지속 피해 및 운석 공격");
-                    // TODO: Eruption 로직 구현
+                    StartEruptionPattern();
                     break;
                 case 1:
-                    Debug.Log("패턴 : Razer (레이저) - 5~10회 레이저 발사");
-                    // TODO: Razer 로직 구현
+                    StartRazerPattern();
                     break;
                 case 2:
-                    Debug.Log("패턴 : Rampage (무차별 난사) - 중심에서 무차별 난사");
-                    // TODO: Rampage 로직 구현
+                    StartRampagePattern();
                     break;
             }
 
-            // 무작위 태그의 플랫폼 다량 생성 (예시 뼈대)
+            // 무작위 태그의 플랫폼 생성
             GenerateRandomTagPlatforms();
         }
 
-        // 그로기 상태에서 공격 성공시 보스 체력 감소 및 플레이어 체력 회복, 보스 공격력 증가
-        // BossHeart 스크립트에서 플레이어가 약점을 밟았을 때 직접 호출됩니다.
+        #region === 패턴 실행 메서드 ===
+
+        private void StartEruptionPattern()
+        {
+            Debug.Log("패턴: Eruption (용암분출) - 운석 공격");
+            bossAnimator.SetTrigger(ANIM_ATK1_ERUPTION);
+            currentPattern = eruptionPattern;
+            eruptionPattern.StartPattern();
+        }
+
+        private void StartRazerPattern()
+        {
+            Debug.Log("패턴: Razer (레이저) - 5~10회 레이저 발사");
+            bossAnimator.SetTrigger(ANIM_ATK3_RAZER);
+            currentPattern = razerPattern;
+            razerPattern.StartPattern();
+        }
+
+        private void StartRampagePattern()
+        {
+            Debug.Log("패턴: Rampage (무차별 난사) - 중심에서 무차별 난사");
+            bossAnimator.SetTrigger(ANIM_ATK2_RAMPAGE);
+            currentPattern = rampagePattern;
+            rampagePattern.StartPattern();
+        }
+
+        #endregion
+
+        #region === 그로기 상태 관리 ===
+
         public void DamageToBoss()
         {
-            if (Boss == null) return;
+            shifter.Hp += 30; // 플레이어 체력 회복
 
-            if (Shifter != null) Shifter.Hp += 30; // 플레이어 체력 회복
-            Boss.BossAttack += 5; // 보스 공격력 증가
-
+            Debug.Log($"보스에게 공격! 남은 체력: {boss.CurrentBossCount}");
             BossDead();
-
-            // (선택 사항) 피격 성공 시 즉시 그로기를 해제하려면 주석 해제
-            // EndGroggy();
         }
 
         private void StartGroggy()
@@ -115,8 +168,17 @@ namespace SHIFTER
             isGroggy = true;
             patternCount = 0;
 
-            if (BossHeart != null) BossHeart.SetActive(true);
-            Debug.Log("보스가 그로기 상태에 빠졌습니다! 약점 노출!");
+            // 현재 패턴 종료
+            if (currentPattern != null)
+            {
+                currentPattern.EndPattern();
+                currentPattern = null;
+            }
+
+            ForceIdleAnimation(); // 공격 애니메이션이 남지 않도록 Idle로 강제 전환
+
+            bossHeart.gameObject.SetActive(true); // 약점 활성화 (속성 상관없이 밟으면 공격 성공)
+            Debug.Log("보스가 그로기 상태에 빠졌습니다! 약점을 공격하세요!");
 
             // 5초 뒤 그로기 자동 해제
             Invoke(nameof(EndGroggy), 5f);
@@ -125,25 +187,90 @@ namespace SHIFTER
         private void EndGroggy()
         {
             isGroggy = false;
-            if (BossHeart != null) BossHeart.SetActive(false);
-            Debug.Log("그로기 상태가 종료되었습니다.");
+            bossHeart.gameObject.SetActive(false);
+            Debug.Log("그로기 상태가 종료되었습니다. 보스가 다시 공격을 시작합니다!");
+        }
+
+        // 대기 중인 공격 트리거를 모두 지우고 Idle 스테이트로 즉시 강제 전환 (Exit Time을 기다리지 않음)
+        private void ForceIdleAnimation()
+        {
+            bossAnimator.ResetTrigger(ANIM_ATK1_ERUPTION);
+            bossAnimator.ResetTrigger(ANIM_ATK2_RAMPAGE);
+            bossAnimator.ResetTrigger(ANIM_ATK3_RAZER);
+            bossAnimator.Play(ANIM_IDLE_STATE);
         }
 
         private void BossDead()
         {
-            if (Boss.CurrentBossCount <= 0)
+            if (boss.CurrentBossCount <= 0)
             {
                 Debug.Log("보스 격파 완료!");
-                // TODO: 보스 사망 애니메이션 재생, 결과창 띄우기 등의 처리
+                StartCoroutine(PlayDeathAndDisappear());
             }
         }
 
-        // 플랫폼 생성 및 제거 로직 뼈대 추가
-        private void GenerateRandomTagPlatforms()
+        // boss_death 애니메이션을 재생한 뒤, 마지막 프레임까지 끝나면 보스를 사라지게 합니다.
+        private IEnumerator PlayDeathAndDisappear()
         {
-            // 플랫폼 프리팹을 생성하고 태그를 랜덤 부여한 뒤 activePlatforms 리스트에 추가
+            // 남아있던 그로기/타이머/패턴 정리
+            CancelInvoke(nameof(EndGroggy));
+            isGroggy = false;
+            encounterStarted = false;
+
+            if (currentPattern != null)
+            {
+                currentPattern.EndPattern();
+                currentPattern = null;
+            }
+            ClearPlatforms();
+            bossHeart.gameObject.SetActive(false);
+            bossAnimator.SetTrigger(ANIM_DEATH);
+
+            // boss_death 클립 길이만큼 대기 (클립 길이가 바뀌면 deathAnimationDuration도 맞춰 조정)
+            yield return new WaitForSeconds(deathAnimationDuration);
+
+            // 마지막 프레임까지 끝났으면 그냥 사라짐
+            gameObject.SetActive(false);
         }
 
+        #endregion
+
+        #region === 플랫폼 생성 및 제거 ===
+
+        // 무작위 속성(태그)을 가진 플랫폼 생성 (색상도 속성에 맞게 함께 적용)
+        private void GenerateRandomTagPlatforms()
+        {
+            if (platformPrefab == null)
+            {
+                Debug.LogWarning("플랫폼 프리팹이 설정되지 않았습니다!");
+                return;
+            }
+
+            for (int i = 0; i < platformCountPerPattern; i++)
+            {
+                // 보스 주변 랜덤 위치에 생성
+                float randomAngle = Random.Range(0f, 360f);
+                float randomDistance = Random.Range(2f, platformSpawnRadius);
+
+                Vector3 spawnPos = transform.position + new Vector3(
+                    Mathf.Cos(randomAngle * Mathf.Deg2Rad) * randomDistance,
+                    Mathf.Sin(randomAngle * Mathf.Deg2Rad) * randomDistance,
+                    0
+                );
+
+                // 플랫폼 생성
+                GameObject platform = Instantiate(platformPrefab, spawnPos, Quaternion.identity);
+
+                // 무작위 속성(White/Black만 사용) 및 그에 맞는 색상 적용
+                // Common은 항상 통과 가능한 발판이 되어 셔프트 챌린지 의미가 없으므로 제외합니다.
+                string randomTag = BossAttributeUtil.RandShiftTag();
+                BossAttributeUtil.Apply(platform, randomTag);
+
+                activePlatforms.Add(platform);
+            }
+        }
+
+        // 생성된 플랫폼 모두 제거
         private void ClearPlatforms()
         {
             foreach (var platform in activePlatforms)
@@ -151,6 +278,9 @@ namespace SHIFTER
                 if (platform != null) Destroy(platform);
             }
             activePlatforms.Clear();
+            Debug.Log("플랫폼들이 제거되었습니다.");
         }
+
+        #endregion
     }
 }

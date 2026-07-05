@@ -22,7 +22,6 @@ namespace Study.Utilities
         public int maxJumpCount = 2;
         public float groundCheckDistance = 0.5f;
         public float skinWidth = 0.02f;
-        public float pushPower = 2.0f;
         public LayerMask collisionLayer;
 
         private Rigidbody2D rBody;
@@ -134,7 +133,6 @@ namespace Study.Utilities
 
             if (hit.collider == null) return move;
 
-            // 수평 이동(Vector3.right 축)일 때만 밀도록 체크
             if (axis == Vector3.right)
             {
                 Rigidbody2D pushBody = hit.collider.GetComponent<Rigidbody2D>();
