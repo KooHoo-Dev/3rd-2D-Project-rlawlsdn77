@@ -16,7 +16,7 @@ namespace SHIFTER
         private void Awake()
         {
             currentSceneIdx = SceneManager.GetActiveScene().buildIndex;
-            nextSceneIdx = Mathf.Clamp(currentSceneIdx + 1, 0, SceneManager.sceneCountInBuildSettings - 1);
+            nextSceneIdx = (currentSceneIdx + 1) % SceneManager.sceneCountInBuildSettings;
         }
 
         private void Update()

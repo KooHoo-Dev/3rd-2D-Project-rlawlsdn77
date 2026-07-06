@@ -10,7 +10,7 @@ namespace SHIFTER
         [SerializeField] private GameObject player;
 
         [Header("데미지 세팅")]
-        [SerializeField] private float damageInterval = 1.0f; // 데미지 간격 (초 단위)
+        [SerializeField] private float damageInterval = 0.5f; // 데미지 간격 (초 단위)
         [SerializeField] private float damageAmount = 2f;  // 데미지 값
 
         private Collider2D[] childColliders;

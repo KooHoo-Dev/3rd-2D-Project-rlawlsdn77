@@ -11,17 +11,28 @@ namespace SHIFTER
 
         [Header("총알 설정")]
         public float bulletDamage = 1f; // 데미지 조절
-        public float bulletSpeed = 10f;  // 속도 조절 (추가됨)
+        public float bulletSpeed = 10f;  // 속도 조절 
+        public int bulletTry = 3; // 발사 회수 조절
+        private int currentTry = 0;
 
         private float nextFireTime;
 
         void Update()
         {
+            if (currentTry == bulletTry)
+            {
+                gameObject.SetActive(false);
+                currentTry = 0;
+                return;
+            } 
+
             if (Time.time >= nextFireTime)
             {
                 Fire();
                 nextFireTime = Time.time + fireRate;
+                currentTry++;
             }
+
         }
 
         void Fire()

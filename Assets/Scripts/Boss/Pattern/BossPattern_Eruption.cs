@@ -14,6 +14,7 @@ namespace SHIFTER
 
         [Header("운석")]
         [SerializeField] private GameObject meteorPrefab; // 운석 프리팹
+
         [SerializeField] private int meteorCount = 5; // 최대 운석 개수
         [SerializeField] private float meteorSpawnHeight = 10f; // 운석 생성 높이
         [SerializeField] private float meteorSpawnInterval = 0.5f; // 운석 생성 시간
@@ -27,6 +28,7 @@ namespace SHIFTER
             bossManager = FindFirstObjectByType<BossManager>();
             shifter = FindFirstObjectByType<Shifter>();
             bossTransform = bossManager.transform;
+
         }
 
         public void StartPattern()

@@ -22,6 +22,9 @@ namespace SHIFTER
         [Header("보스 약점")]
         [SerializeField] private BossHeart bossHeart;
 
+        [Header("보스 문")]
+        [SerializeField] private GameObject BossOutdoor;
+
         private Animator bossAnimator;
 
         private const string ANIM_ATK1_ERUPTION = "Atk1";
@@ -206,6 +209,7 @@ namespace SHIFTER
             {
                 Debug.Log("보스 격파 완료!");
                 StartCoroutine(PlayDeathAndDisappear());
+                BossOutdoor.SetActive(false);
             }
         }
 
