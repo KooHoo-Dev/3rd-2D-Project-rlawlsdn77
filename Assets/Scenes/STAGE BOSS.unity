@@ -1151,6 +1151,30 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4716693181068208546, guid: a8f28dc76c83d4c4fa617e2778dd8b9b, type: 3}
   m_PrefabInstance: {fileID: 1967356628}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1552606115 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2451439754999594024, guid: a8f28dc76c83d4c4fa617e2778dd8b9b, type: 3}
+  m_PrefabInstance: {fileID: 1967356628}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552606114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &1552606118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552606114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b4f827da9ec0dc4b9f7e2be8a74a1af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SHIFTER.BossTimerUI
+  timerText: {fileID: 1552606115}
 --- !u!1001 &1611339220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1485,9 +1509,17 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1155971059}
+    - target: {fileID: 3284579699646262395, guid: a8f28dc76c83d4c4fa617e2778dd8b9b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4716693181068208546, guid: a8f28dc76c83d4c4fa617e2778dd8b9b, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766114214413871523, guid: a8f28dc76c83d4c4fa617e2778dd8b9b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6370814290068307647, guid: a8f28dc76c83d4c4fa617e2778dd8b9b, type: 3}
       propertyPath: m_Name
@@ -1584,7 +1616,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4716693181068208546, guid: a8f28dc76c83d4c4fa617e2778dd8b9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1552606118}
   m_SourcePrefab: {fileID: 100100000, guid: a8f28dc76c83d4c4fa617e2778dd8b9b, type: 3}
 --- !u!1 &1967356629 stripped
 GameObject:
@@ -1595,6 +1630,11 @@ GameObject:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2665168425126368795, guid: a8f28dc76c83d4c4fa617e2778dd8b9b, type: 3}
   m_PrefabInstance: {fileID: 1967356628}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2069404269 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3394994161049112878, guid: b6f4b136873812b42bacb1f271226616, type: 3}
+  m_PrefabInstance: {fileID: 383634569}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2118816432
 GameObject:
@@ -1825,6 +1865,10 @@ PrefabInstance:
       propertyPath: bossHeart
       value: 
       objectReference: {fileID: 6878573973346460871}
+    - target: {fileID: 782131369895424541, guid: 499b96ebaf2c29646a95dd687a8efaf7, type: 3}
+      propertyPath: BossOutdoor
+      value: 
+      objectReference: {fileID: 2069404269}
     - target: {fileID: 837892598985499038, guid: 499b96ebaf2c29646a95dd687a8efaf7, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -2055,11 +2099,11 @@ PrefabInstance:
       objectReference: {fileID: 1967356630}
     - target: {fileID: 5949405743273938619, guid: 2dcc9bcbc81418e4b8fec5728934fb2a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 69.3
+      value: -16
       objectReference: {fileID: 0}
     - target: {fileID: 5949405743273938619, guid: 2dcc9bcbc81418e4b8fec5728934fb2a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.6
+      value: -2.6
       objectReference: {fileID: 0}
     - target: {fileID: 5949405743273938619, guid: 2dcc9bcbc81418e4b8fec5728934fb2a, type: 3}
       propertyPath: m_LocalPosition.z

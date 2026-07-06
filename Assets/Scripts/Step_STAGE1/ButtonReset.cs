@@ -34,10 +34,7 @@ namespace SHIFTER
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision != null)
-            {
-                ResetLights();
-            }
+            ResetLights();
         }
 
         // 전구 초기화 로직 분리
@@ -64,7 +61,6 @@ namespace SHIFTER
             if (AllGreen == countGreen)
             {
                 Door2.SetActive(false);
-                Debug.Log("모든 전구가 Green입니다. 문이 열립니다.");
             }
         }
     }

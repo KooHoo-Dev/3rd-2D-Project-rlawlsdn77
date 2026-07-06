@@ -1,5 +1,4 @@
 using Study.Utilities;
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -23,10 +22,9 @@ namespace SHIFTER
 
         public int FacingDirection { get; private set; } = 1;
 
+        private bool movementLocked = false;
+
         public static readonly int MOVEMENT = Animator.StringToHash("Movement");
-        public static readonly int IS_RUN = Animator.StringToHash("IsRun");
-        public static readonly int IS_JUMP = Animator.StringToHash("IsJump");
-        public static readonly int IS_DOWN = Animator.StringToHash("IsDown");
         public static readonly int IS_SHIFT = Animator.StringToHash("IsShift");
 
         private void Awake()
@@ -40,12 +38,24 @@ namespace SHIFTER
         private void Update()
         {
             UpdateCooldown();
-            MoveInput();
+            if (!movementLocked) MoveInput();
             ShiftInput();
             EscInput();
         }
 
-        // Shift 쿨다운 함순
+        // 퍼즐 조준 모드 등에서 이동만 잠그고 Shift(태그 전환)는 그대로 허용할 때 사용
+        public void SetMovementLocked(bool locked)
+        {
+            movementLocked = locked;
+
+            if (locked)
+            {
+                animator.SetFloat(MOVEMENT, 0f);
+                characterController.SetMoveInput(0f);
+            }
+        }
+
+        // Shift 쿨다운 감소
         private void UpdateCooldown()
         {
             if (cooldownTimer > 0) cooldownTimer -= Time.deltaTime;
@@ -72,7 +82,7 @@ namespace SHIFTER
             if (SimpleInput.GetKeyDown(Key.Space)) characterController.RequestJump();
         }
 
-        // Shift 키 입력을 통해 속성(태그) 변경 + 로그 출력
+        // Shift 키 입력을 통해 속성(태그) 변경
         private void ShiftInput()
         {
             if (SimpleInput.GetKeyDown(Key.LeftShift) || SimpleInput.GetKeyDown(Key.RightShift))
@@ -83,8 +93,6 @@ namespace SHIFTER
 
                     animator.SetTrigger(IS_SHIFT);
                     shifter.ShiftTag();
-
-                    Debug.Log($"현재 플레이어의 속성은 {gameObject.tag} 입니다.");
                 }
             }
         }
@@ -108,6 +116,5 @@ namespace SHIFTER
                 }
             }
         }
-
     }
 }

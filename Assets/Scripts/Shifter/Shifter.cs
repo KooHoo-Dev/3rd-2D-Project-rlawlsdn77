@@ -44,7 +44,6 @@ namespace SHIFTER
         public void TakeDamage(float damage)
         {
             Hp -= damage;
-            Debug.Log($"{gameObject.name} 피격! 현재 HP: {Hp}");
 
             // 피격 이펙트 코루틴 실행
             if (gameObject.activeInHierarchy)
@@ -76,7 +75,6 @@ namespace SHIFTER
 
         private void Die()
         {
-            Debug.Log($"{gameObject.name}가 사망하였습니다.");
             if (GameoverUI != null) GameoverUI.SetActive(true);
             Time.timeScale = 0.0f; // 게임 일시정지
         }

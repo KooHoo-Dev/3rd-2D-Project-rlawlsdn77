@@ -10,7 +10,6 @@ namespace SHIFTER
     {
         // 씬에 하나만 존재하는 참조들은 인스펙터에 노출하지 않고 자동으로 찾습니다.
         private BossManager bossManager;
-        private Shifter shifter;
         private Transform bossTransform;
 
         [Header("난사 설정")]
@@ -26,14 +25,12 @@ namespace SHIFTER
         private void Start()
         {
             bossManager = FindFirstObjectByType<BossManager>();
-            shifter = FindFirstObjectByType<Shifter>();
             bossTransform = bossManager.transform;
         }
 
         public void StartPattern()
         {
             activeProjectiles.Clear();
-            Debug.Log("무차별 난사!");
             StartCoroutine(RampageRoutine());
         }
 

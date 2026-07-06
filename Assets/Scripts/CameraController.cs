@@ -68,7 +68,7 @@ namespace SHIFTER
             transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing * Time.deltaTime);
         }
 
-        // 💡 에디터 Scene 창에서 비대칭 데드존 박스를 시각적으로 보여줍니다.
+        // 에디터 Scene 창에서 비대칭 데드존 박스를 시각적으로 보여줍니다.
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.green;

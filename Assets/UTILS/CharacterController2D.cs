@@ -91,19 +91,6 @@ namespace Study.Utilities
             return true;
         }
 
-        public void LaunchByJumpPad(float launchY, float launchXMultiplier)
-        {
-            VerticalVelocity = launchY;
-
-            float currentXMove = moveInput * speed;
-            Vector3 horizontalDelta = new Vector3(currentXMove * launchXMultiplier, 0f, 0f) * Time.fixedDeltaTime;
-
-            AddExternalMovement(horizontalDelta);
-
-            jumpCount = 0;
-            IsGrounded = false;
-        }
-
         #endregion
 
         #region Private Methods (운동 파이프라인)

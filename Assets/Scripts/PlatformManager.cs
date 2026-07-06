@@ -46,16 +46,13 @@ namespace SHIFTER
             }
         }
 
-        /// <summary>
-        /// collider On / Off 코드
-        /// </summary>
+        // 콜라이더 On/Off
         private void ColliderControll()
         {
             foreach (BoxCollider2D col in allColliders)
             {
                 GameObject obj = col.gameObject;
 
-                // 태그 조건 검사 (기존 로직 유지)
                 if (obj.CompareTag("Common") || obj.CompareTag("Red"))
                 {
                     col.enabled = true;
@@ -71,9 +68,7 @@ namespace SHIFTER
             }
         }
 
-        /// <summary>
-        /// color.a 변경 코드
-        /// </summary>
+        // 태그 불일치 시 반투명 처리
         private void AlphaControll()
         {
             string playerTag = player.tag;
@@ -84,7 +79,6 @@ namespace SHIFTER
 
                 GameObject obj = sprite.gameObject;
                 Color color = sprite.color;
-
 
                 // 다른 태그일때 알파값 0.5
                 if ((playerTag == "Black" && obj.CompareTag("White")) || (playerTag == "White" && obj.CompareTag("Black")))

@@ -79,7 +79,6 @@ namespace SHIFTER
                 if (collision.CompareTag(gameObject.tag))
                 {
                     shifter.TakeDamage(damage);
-                    Debug.Log($"보스의 공격! 플레이어가 {damage}의 피해를 입었습니다.");
                     Destroy(gameObject);
                 }
             }

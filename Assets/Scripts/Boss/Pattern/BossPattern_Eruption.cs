@@ -9,7 +9,6 @@ namespace SHIFTER
     public class BossPattern_Eruption : MonoBehaviour, IBossPattern
     {
         private BossManager bossManager;
-        private Shifter shifter;
         private Transform bossTransform;
 
         [Header("운석")]
@@ -26,16 +25,12 @@ namespace SHIFTER
         private void Start()
         {
             bossManager = FindFirstObjectByType<BossManager>();
-            shifter = FindFirstObjectByType<Shifter>();
             bossTransform = bossManager.transform;
-
         }
 
         public void StartPattern()
         {
             meteorList.Clear();
-
-            Debug.Log("운석 낙하 시작!");
             StartCoroutine(SpawnMeteorsRoutine());
         }
 
@@ -72,6 +67,7 @@ namespace SHIFTER
                     meteorProjectile.SetDamage(meteorDamage);
 
                     meteor.GetComponent<Rigidbody2D>().gravityScale = 2f; // 아래로 떨어지게 설정
+                    meteor.transform.rotation = Quaternion.Euler(0, 0, -90f); // 기본 스프라이트가 우측을 보므로 아래를 보도록 회전
                 }
 
                 yield return new WaitForSeconds(meteorSpawnInterval);

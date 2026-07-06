@@ -31,7 +31,6 @@ namespace SHIFTER
         public void StartPattern()
         {
             activeLasers.Clear();
-            Debug.Log("레이저 공격!");
             StartCoroutine(FireLaserRoutine());
         }
 
@@ -63,8 +62,7 @@ namespace SHIFTER
         {
             if (laserProjectilePrefab == null) return;
 
-            // 플레이어 방향 각도에 오차각을 더해서 완전히 회피 불가능하지는 않게 함
-            // (기본 삼각함수만 사용 - Atan2로 각도를 구하고, Cos/Sin으로 방향 벡터를 만듭니다)
+            // 오차각 만들기
             Vector3 directionToPlayer = (shifter.transform.position - bossTransform.position).normalized;
             float baseAngle = Mathf.Atan2(directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg;
             float finalRadian = (baseAngle + Random.Range(-15f, 15f)) * Mathf.Deg2Rad;

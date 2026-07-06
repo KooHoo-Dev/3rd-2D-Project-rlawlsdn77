@@ -6,7 +6,6 @@ namespace SHIFTER
 {
     // 보스의 패턴 관리 및 그로기 상태 전환을 담당하는 스크립트
     // 패턴은 일정 시간 간격으로 변경되며, 3번의 패턴 실행 후 보스는 그로기 상태로 전환됩니다.
-
     public class BossManager : MonoBehaviour
     {
         // 패턴 참조
@@ -45,7 +44,9 @@ namespace SHIFTER
         private Boss boss;
 
         private bool isGroggy = false;
-        private bool encounterStarted = false; 
+        private bool encounterStarted = false;
+        public bool EncounterStarted => encounterStarted; // 보스 타이머 UI 등 외부에서 조회용
+
         private IBossPattern currentPattern = null;
         private List<GameObject> activePlatforms = new List<GameObject>();
 
@@ -76,7 +77,6 @@ namespace SHIFTER
             if (encounterStarted) return;
             encounterStarted = true;
             PatternTimer = 0f;
-            Debug.Log("보스전 시작!");
         }
 
         private void PatternManager()
@@ -99,7 +99,6 @@ namespace SHIFTER
             ClearPlatforms();
 
             patternCount++;
-            Debug.Log($"보스가 {patternCount}번째 패턴을 실행합니다");
 
             // 3번 실행 후 그로기 상태로 전환
             if (patternCount > 3)
@@ -131,7 +130,6 @@ namespace SHIFTER
 
         private void StartEruptionPattern()
         {
-            Debug.Log("패턴: Eruption (용암분출) - 운석 공격");
             bossAnimator.SetTrigger(ANIM_ATK1_ERUPTION);
             currentPattern = eruptionPattern;
             eruptionPattern.StartPattern();
@@ -139,7 +137,6 @@ namespace SHIFTER
 
         private void StartRazerPattern()
         {
-            Debug.Log("패턴: Razer (레이저) - 5~10회 레이저 발사");
             bossAnimator.SetTrigger(ANIM_ATK3_RAZER);
             currentPattern = razerPattern;
             razerPattern.StartPattern();
@@ -147,7 +144,6 @@ namespace SHIFTER
 
         private void StartRampagePattern()
         {
-            Debug.Log("패턴: Rampage (무차별 난사) - 중심에서 무차별 난사");
             bossAnimator.SetTrigger(ANIM_ATK2_RAMPAGE);
             currentPattern = rampagePattern;
             rampagePattern.StartPattern();
@@ -160,8 +156,6 @@ namespace SHIFTER
         public void DamageToBoss()
         {
             shifter.Hp += 30; // 플레이어 체력 회복
-
-            Debug.Log($"보스에게 공격! 남은 체력: {boss.CurrentBossCount}");
             BossDead();
         }
 
@@ -181,7 +175,6 @@ namespace SHIFTER
             ForceIdleAnimation(); // 공격 애니메이션이 남지 않도록 Idle로 강제 전환
 
             bossHeart.gameObject.SetActive(true); // 약점 활성화 (속성 상관없이 밟으면 공격 성공)
-            Debug.Log("보스가 그로기 상태에 빠졌습니다! 약점을 공격하세요!");
 
             // 5초 뒤 그로기 자동 해제
             Invoke(nameof(EndGroggy), 5f);
@@ -191,7 +184,6 @@ namespace SHIFTER
         {
             isGroggy = false;
             bossHeart.gameObject.SetActive(false);
-            Debug.Log("그로기 상태가 종료되었습니다. 보스가 다시 공격을 시작합니다!");
         }
 
         // 대기 중인 공격 트리거를 모두 지우고 Idle 스테이트로 즉시 강제 전환 (Exit Time을 기다리지 않음)
@@ -207,7 +199,6 @@ namespace SHIFTER
         {
             if (boss.CurrentBossCount <= 0)
             {
-                Debug.Log("보스 격파 완료!");
                 StartCoroutine(PlayDeathAndDisappear());
                 BossOutdoor.SetActive(false);
             }
@@ -282,7 +273,6 @@ namespace SHIFTER
                 if (platform != null) Destroy(platform);
             }
             activePlatforms.Clear();
-            Debug.Log("플랫폼들이 제거되었습니다.");
         }
 
         #endregion

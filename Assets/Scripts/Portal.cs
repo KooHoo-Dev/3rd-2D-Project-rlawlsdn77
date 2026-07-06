@@ -38,7 +38,6 @@ namespace SHIFTER
             {
                 isPlayerInside = true;
             }
-
         }
 
         // 영역에서 나갔을 때

@@ -2,7 +2,6 @@ using UnityEngine;
 
 namespace SHIFTER
 {
-
     // Red 타일에 플레이어가 올라갔을 때 damageInterval 간격으로 damageAmount 만큼의 데미지를 주는 스크립트
     public class Red : MonoBehaviour
     {
