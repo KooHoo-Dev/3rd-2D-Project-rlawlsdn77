@@ -19,9 +19,7 @@ namespace SHIFTER
             if (sceneName == "Exit")
             {
                 Application.Quit(); // 게임 나가기
-#if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false; // 에디터에서는 Play 모드 종료
-#endif
             }
             else if (sceneName == "Restart") // 현재 씬 재시작
             {

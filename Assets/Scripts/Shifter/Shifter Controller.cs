@@ -43,7 +43,7 @@ namespace SHIFTER
             EscInput();
         }
 
-        // 퍼즐 조준 모드 등에서 이동만 잠그고 Shift(태그 전환)는 그대로 허용할 때 사용
+        // STAGE STEP1 레이저 퍼즐 전용 (이동 잠금 / SHIFT는 가능)
         public void SetMovementLocked(bool locked)
         {
             movementLocked = locked;

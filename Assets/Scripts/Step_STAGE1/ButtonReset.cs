@@ -2,9 +2,7 @@ using UnityEngine;
 
 namespace SHIFTER
 {
-    // ResetButton에 삽입되는 스크립트로,
-    // 이 버튼을 누를 시 모든 전구가 초기화된다.
-    // 또한 전구가 모두 Green일 시 문을 여는 역할도 담당한다.
+    // STAGE 1 STEP 2 퍼즐 (버튼 초기화 or 퍼즐 성공 시 이벤트 매니징)
     public class ButtonReset : MonoBehaviour
     {
         [SerializeField] private GameObject[] Light;

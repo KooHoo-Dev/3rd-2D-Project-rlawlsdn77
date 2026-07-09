@@ -3,11 +3,10 @@ using UnityEngine;
 
 namespace SHIFTER
 {
-    // 보스전 시작(0초)부터 보스 격파 시점까지 걸린 시간을 mm:ss로 표시합니다.
-    // 격파되면 그 시점 시간에서 멈춥니다.
+    // 보스 격파 시간 타이머 (격파 시 멈춤)
     public class BossTimerUI : MonoBehaviour
     {
-        [SerializeField] private TMP_Text timerText; // 비워두면 같은 오브젝트/자식에서 자동으로 찾음
+        [SerializeField] private TMP_Text timerText;
 
         private BossManager bossManager;
         private Boss boss;

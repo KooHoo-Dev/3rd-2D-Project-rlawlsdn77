@@ -4,8 +4,7 @@ using UnityEngine;
 
 namespace SHIFTER
 {
-    // white tile / black tile 프리팹 중 하나를 랜덤으로 뽑아 일정 간격으로 계속 생성해서 밀어붙입니다.
-    // 벽이 그 프레임에 움직인 만큼만 그대로 따라 밀리게 만듭니다.
+    // 마지막 퍼즐 (벽이 계속 밀려 들어옴)
     public class CrusherWall : MonoBehaviour
     {
         [SerializeField] private GameObject whiteTilePrefab;

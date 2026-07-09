@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
 namespace SHIFTER
 {
@@ -35,11 +34,6 @@ namespace SHIFTER
         // 보스 사망 애니메이션 길이
         [SerializeField] private float deathAnimationDuration = 2.1f;
 
-        [Header("플랫폼 생성 설정")]
-        [SerializeField] private GameObject platformPrefab;   // 플랫폼 프리팹
-        [SerializeField] private int platformCountPerPattern = 5;
-        [SerializeField] private float platformSpawnRadius = 6f;
-
         private Shifter shifter;
         private Boss boss;
 
@@ -48,7 +42,6 @@ namespace SHIFTER
         public bool EncounterStarted => encounterStarted; // 보스 타이머 UI 등 외부에서 조회용
 
         private IBossPattern currentPattern = null;
-        private List<GameObject> activePlatforms = new List<GameObject>();
 
         private void Start()
         {
@@ -91,12 +84,11 @@ namespace SHIFTER
 
         private void ChangePattern()
         {
-            // 이전 패턴 종료 및 플랫폼 제거
+            // 이전 패턴 종료
             if (currentPattern != null)
             {
                 currentPattern.EndPattern();
             }
-            ClearPlatforms();
 
             patternCount++;
 
@@ -121,9 +113,6 @@ namespace SHIFTER
                     StartRampagePattern();
                     break;
             }
-
-            // 무작위 태그의 플랫폼 생성
-            GenerateRandomTagPlatforms();
         }
 
         #region === 패턴 실행 메서드 ===
@@ -172,9 +161,9 @@ namespace SHIFTER
                 currentPattern = null;
             }
 
-            ForceIdleAnimation(); // 공격 애니메이션이 남지 않도록 Idle로 강제 전환
+            ForceIdleAnimation(); // idle 강제전환
 
-            bossHeart.gameObject.SetActive(true); // 약점 활성화 (속성 상관없이 밟으면 공격 성공)
+            bossHeart.gameObject.SetActive(true); // 약점 활성화
 
             // 5초 뒤 그로기 자동 해제
             Invoke(nameof(EndGroggy), 5f);
@@ -186,7 +175,7 @@ namespace SHIFTER
             bossHeart.gameObject.SetActive(false);
         }
 
-        // 대기 중인 공격 트리거를 모두 지우고 Idle 스테이트로 즉시 강제 전환 (Exit Time을 기다리지 않음)
+        // Idle 스테이트로 즉시 강제 전환
         private void ForceIdleAnimation()
         {
             bossAnimator.ResetTrigger(ANIM_ATK1_ERUPTION);
@@ -204,10 +193,10 @@ namespace SHIFTER
             }
         }
 
-        // boss_death 애니메이션을 재생한 뒤, 마지막 프레임까지 끝나면 보스를 사라지게 합니다.
+        // boss_death 애니메이션을 재생한 뒤, 프레임 종료시 보스 사라짐
         private IEnumerator PlayDeathAndDisappear()
         {
-            // 남아있던 그로기/타이머/패턴 정리
+            
             CancelInvoke(nameof(EndGroggy));
             isGroggy = false;
             encounterStarted = false;
@@ -217,62 +206,14 @@ namespace SHIFTER
                 currentPattern.EndPattern();
                 currentPattern = null;
             }
-            ClearPlatforms();
             bossHeart.gameObject.SetActive(false);
             bossAnimator.SetTrigger(ANIM_DEATH);
 
-            // boss_death 클립 길이만큼 대기 (클립 길이가 바뀌면 deathAnimationDuration도 맞춰 조정)
+            // boss_death 클립 길이만큼 대기 
             yield return new WaitForSeconds(deathAnimationDuration);
 
-            // 마지막 프레임까지 끝났으면 그냥 사라짐
+            // 보스 컽
             gameObject.SetActive(false);
-        }
-
-        #endregion
-
-        #region === 플랫폼 생성 및 제거 ===
-
-        // 무작위 속성(태그)을 가진 플랫폼 생성 (색상도 속성에 맞게 함께 적용)
-        private void GenerateRandomTagPlatforms()
-        {
-            if (platformPrefab == null)
-            {
-                Debug.LogWarning("플랫폼 프리팹이 설정되지 않았습니다!");
-                return;
-            }
-
-            for (int i = 0; i < platformCountPerPattern; i++)
-            {
-                // 보스 주변 랜덤 위치에 생성
-                float randomAngle = Random.Range(0f, 360f);
-                float randomDistance = Random.Range(2f, platformSpawnRadius);
-
-                Vector3 spawnPos = transform.position + new Vector3(
-                    Mathf.Cos(randomAngle * Mathf.Deg2Rad) * randomDistance,
-                    Mathf.Sin(randomAngle * Mathf.Deg2Rad) * randomDistance,
-                    0
-                );
-
-                // 플랫폼 생성
-                GameObject platform = Instantiate(platformPrefab, spawnPos, Quaternion.identity);
-
-                // 무작위 속성(White/Black만 사용) 및 그에 맞는 색상 적용
-                // Common은 항상 통과 가능한 발판이 되어 셔프트 챌린지 의미가 없으므로 제외합니다.
-                string randomTag = BossAttributeUtil.RandShiftTag();
-                BossAttributeUtil.Apply(platform, randomTag);
-
-                activePlatforms.Add(platform);
-            }
-        }
-
-        // 생성된 플랫폼 모두 제거
-        private void ClearPlatforms()
-        {
-            foreach (var platform in activePlatforms)
-            {
-                if (platform != null) Destroy(platform);
-            }
-            activePlatforms.Clear();
         }
 
         #endregion

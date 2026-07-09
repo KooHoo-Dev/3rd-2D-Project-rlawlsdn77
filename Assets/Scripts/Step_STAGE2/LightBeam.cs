@@ -5,8 +5,6 @@ using UnityEngine;
 namespace SHIFTER
 {
     // 조준 모드일 때만 마우스 방향으로 레이저를 발사합니다.
-    // Mirror(거울)에 맞으면 입사각=반사각으로 반사하며 계속 나아가고,
-    // LightSensor에 명중하면 전달합니다. LaserPuzzleManager가 IsAiming을 제어합니다.
     public class LightBeam : MonoBehaviour
     {
         [SerializeField] private LightSensor targetSensor; // 비워두면 씬에서 자동으로 찾음

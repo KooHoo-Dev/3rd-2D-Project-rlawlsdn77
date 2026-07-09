@@ -1,15 +1,7 @@
-using Study.Utilities;
 using UnityEngine;
-using UnityEngine.InputSystem;
-
 
 namespace Study.Utilities
 {
-    // RequireComponent?
-    // : 아래의 선언된 클래스가 동작하려면 typeof(컴포넌트)의
-    //  컴포넌트가 필요하다고 강제하는 키워드 입니다.
-    //  GameObject에 Attach하게 되면 필요한 컴포넌트를
-    //  자동으로 생성합니다
     [RequireComponent(typeof(Rigidbody2D))]
     public class CharacterController2D : MonoBehaviour
     {
@@ -32,11 +24,8 @@ namespace Study.Utilities
         private Vector3 externalDelta = Vector3.zero;
         private float moveInput = 0.0f;
 
-        // 아래의 두개는 외부에서 조회가 가능해야 합니다. 
-        // 읽기 전용으로 바꿔줍니다
         public float VerticalVelocity { get; private set; } = 0.0f;
         public bool IsGrounded { get; private set; } = false;
-
 
         #region Unity Methods
 
@@ -52,7 +41,7 @@ namespace Study.Utilities
         {
             IsGrounded = CheckGrounded();
 
-            ApplyGravaity();
+            ApplyGravity();
             ApplyJump();
 
             Vector3 desireMove =
@@ -95,7 +84,7 @@ namespace Study.Utilities
 
         #region Private Methods (운동 파이프라인)
 
-        private void ApplyGravaity()
+        private void ApplyGravity()
         {
             if (IsGrounded && VerticalVelocity <= 0)
             {
@@ -175,5 +164,3 @@ namespace Study.Utilities
         #endregion
     }
 }
-
-
